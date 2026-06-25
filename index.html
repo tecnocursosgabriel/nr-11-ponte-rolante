@@ -3965,8 +3965,8 @@
 
     #s4f .mod4-risk-wrap,
     #s3g .mod4-risk-wrap {
-      width: 100%;
-      max-width: min(720px, 94vw);
+      width: 100% !important;
+      max-width: min(980px, 94vw) !important;
       margin: 0 auto;
       height: auto;
     }
@@ -3977,8 +3977,8 @@
         radial-gradient(ellipse at 50% 0%, rgba(114, 9, 183, 0.12), transparent 55%),
         linear-gradient(160deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
       border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: clamp(18px, 2.5vw, 26px);
-      padding: clamp(22px, 3.5vh, 32px) clamp(20px, 3vw, 32px);
+      border-radius: clamp(24px, 2.5vw, 32px);
+      padding: clamp(32px, 3.5vh, 52px) clamp(24px, 3vw, 64px);
       box-shadow:
         0 20px 48px rgba(0, 0, 0, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -4222,7 +4222,7 @@
 
       #s4f .mod4-risk-wrap,
       #s3g .mod4-risk-wrap {
-        max-width: min(820px, 92vw);
+        max-width: min(980px, 94vw) !important;
       }
 
       #s4f .mod4-risk-zones,
@@ -7948,9 +7948,11 @@
       }
     }
 
-    /* Card intro — Desafio Módulo 1 e Módulo 2 (mobile + tablet) */
+    /* Card intro — Desafio Módulo 1, 2, 3 e 4 (mobile + tablet) */
     #s2e #mod1-game-intro,
-    #s3f #mod2-quiz-intro {
+    #s3f #mod2-quiz-intro,
+    #s3g #mod3-game-intro,
+    #s4f #mod4-quiz-intro {
       padding: 32px 24px 36px;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(114, 9, 183, 0.28);
@@ -7982,14 +7984,17 @@
       flex-shrink: 0;
     }
 
-    #s3f .mod1-game-wrap {
+    #s3f .mod1-game-wrap,
+    #s3g .mod1-game-wrap,
+    #s4f .mod1-game-wrap {
       flex-shrink: 0;
       width: 100%;
       max-width: 640px;
       margin: 0 auto;
     }
 
-    #s3f #mod2-quiz-play.quiz-wrap {
+    #s3f #mod2-quiz-play.quiz-wrap,
+    #s4f #mod4-quiz-play.quiz-wrap {
       max-width: 760px;
     }
 
@@ -8017,30 +8022,40 @@
         align-items: center !important;
       }
 
-      #s3f .mod1-game-wrap {
+      #s3f .mod1-game-wrap,
+      #s3g .mod1-game-wrap,
+      #s4f .mod1-game-wrap {
         max-width: 980px;
         width: 100%;
       }
 
-      #s3f #mod2-quiz-intro {
+      #s3f #mod2-quiz-intro,
+      #s3g #mod3-game-intro,
+      #s4f #mod4-quiz-intro {
         padding: 52px 64px 56px;
         border-radius: 32px;
       }
 
-      #s3f #mod2-quiz-intro .ic-circle {
+      #s3f #mod2-quiz-intro .ic-circle,
+      #s3g #mod3-game-intro .ic-circle,
+      #s4f #mod4-quiz-intro .ic-circle {
         width: 132px !important;
         height: 132px !important;
         font-size: 64px !important;
         margin-bottom: 32px !important;
       }
 
-      #s3f #mod2-quiz-intro h3 {
+      #s3f #mod2-quiz-intro h3,
+      #s3g #mod3-game-intro h3,
+      #s4f #mod4-quiz-intro h3 {
         font-size: 40px !important;
         margin-bottom: 20px !important;
         line-height: 1.2;
       }
 
-      #s3f #mod2-quiz-intro p {
+      #s3f #mod2-quiz-intro p,
+      #s3g #mod3-game-intro p,
+      #s4f #mod4-quiz-intro p {
         font-size: 20px !important;
         line-height: 1.7 !important;
         max-width: 760px;
@@ -8050,7 +8065,9 @@
         color: rgba(255, 255, 255, 0.82) !important;
       }
 
-      #s3f #mod2-quiz-intro .btn-start {
+      #s3f #mod2-quiz-intro .btn-start,
+      #s3g #mod3-game-intro .btn-start,
+      #s4f #mod4-quiz-intro .btn-start {
         padding: 20px 56px !important;
         font-size: 18px !important;
         letter-spacing: 0.08em;
@@ -9498,16 +9515,16 @@
         </div>
         <div class="content-area">
 
-          <div id="mod3-game-intro" class="mod4-risk-wrap mod4-risk-shell"
+          <div id="mod3-game-intro" class="mod1-game-wrap"
             style="text-align:center; animation: fadeIn 0.8s ease;">
-            <div class="mod4-risk-icon">⚙️</div>
-            <h3 class="mod4-risk-intro-title">Desafio ATEX — Módulo 3</h3>
-            <p class="mod4-risk-intro-desc">
+            <div class="ic-circle" style="margin: 0 auto 24px; width: 96px; height: 96px; font-size: 48px;">⚙️</div>
+            <h3 style="font-family:var(--font-h); font-size:26px; color:var(--white); margin-bottom:12px;">Desafio ATEX — Módulo 3</h3>
+            <p style="color:rgba(255,255,255,0.72); font-size:15px; line-height:1.65; margin-bottom:28px;">
               Classifique cada conceito ou equipamento de proteção no grupo adequado:
               <strong>Gases e Vapores</strong>, <strong>Poeiras e Fibras</strong> ou
               <strong>Riscos e Temperaturas</strong>. São <strong>3 conceitos</strong> para testar seu aprendizado.
             </p>
-            <button class="btn-start" style="padding: 14px 36px; font-size: 14px; text-transform: uppercase;"
+            <button class="btn-start" style="padding: 16px 40px; font-size: 15px; text-transform: uppercase;"
               onclick="startMod3Game()">INICIAR DESAFIO</button>
           </div>
 
@@ -9827,14 +9844,14 @@
           <div class="slide-title">Quiz: Segurança <span>Química</span></div>
         </div>
         <div class="content-area mod4-state-intro">
-          <div id="mod4-quiz-intro" class="mod4-risk-wrap mod4-risk-shell" style="text-align:center; animation: fadeIn 0.8s ease;">
-            <div class="mod4-risk-icon">🧪</div>
-            <h3 class="mod4-risk-intro-title">Desafio ATEX — Módulo 4</h3>
-            <p class="mod4-risk-intro-desc">
+          <div id="mod4-quiz-intro" class="mod1-game-wrap" style="text-align:center; animation: fadeIn 0.8s ease;">
+            <div class="ic-circle" style="margin: 0 auto 24px; width: 96px; height: 96px; font-size: 48px;">🧪</div>
+            <h3 style="font-family:var(--font-h); font-size:26px; color:var(--white); margin-bottom:12px;">Desafio ATEX — Módulo 4</h3>
+            <p style="color:rgba(255,255,255,0.72); font-size:15px; line-height:1.65; margin-bottom:28px;">
               Responda <strong>4 perguntas</strong> sobre <strong>GHS</strong>,
               <strong>Sinalização no Transporte</strong>, <strong>Diamante de Hommel</strong> e <strong>FISPQ</strong>.
             </p>
-            <button class="btn-start" style="padding: 14px 36px; font-size: 14px; text-transform: uppercase;"
+            <button class="btn-start" style="padding: 16px 40px; font-size: 15px; text-transform: uppercase;"
               onclick="startMod4Quiz()">INICIAR DESAFIO</button>
           </div>
 
