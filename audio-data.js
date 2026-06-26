@@ -55,6 +55,21 @@ const NARRATION_OVERRIDES = {
     'Riscos Inerentes. O que torna uma área classificada perigosa no dia a dia? Além da classificação de zonas, existem riscos inerentes — perigos que podem estar presentes mesmo quando seguimos procedimentos. Fontes de Ignição: faíscas, superfícies quentes, descargas eletrostáticas e equipamentos elétricos não certificados Ex podem acender uma mistura inflamável. Formação de AE: vazamentos, evaporação, acúmulo de poeiras e névoas aumentam a concentração de substâncias inflamáveis no ar. Equipamento Inadequado: usar material sem certificação Ex, temperatura superficial incorreta ou categoria de proteção inadequada para a zona é risco inerente grave.',
 
   s4f: null, // montado a partir do deck do jogo Módulo 4
+  's-mod5':
+    'Módulo 5. Prevenção Contra Poeiras Combustíveis e Incêndios. Neste módulo você aprenderá sobre a prevenção e controle de poeiras combustíveis, mitigação de riscos de incêndio em áreas classificadas, e os principais procedimentos e equipamentos de segurança associados.',
+  s5v:
+    'Vídeo. Poeiras e Incêndios. Prevenção Contra Poeiras Combustíveis e Incêndios. Assista ao vídeo sobre a prevenção contra poeiras combustíveis e incêndios em áreas classificadas. Avance quando concluir.',
+  s5v2:
+    'Vídeo. Pentágono de Explosão. O Pentágono de Explosão de Poeira. Assista ao vídeo sobre os cinco elementos do pentágono de explosão de poeiras em ambientes industriais. Avance quando concluir.',
+  s5f:
+    'Desafio do Módulo 5. Julgue as afirmações sobre poeiras e extintores. Quatro afirmações sobre o Pentágono de Explosão, energias mínimas de ignição e a escolha do agente extintor correto para a segurança em áreas classificadas. Responda Verdadeiro ou Falso para cada afirmação e conclua o desafio para validar o módulo.',
+  's-mod6':
+    'Módulo 6. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10. Neste módulo você aprenderá sobre a importância da gestão integrada, análise de riscos e as regras de segurança fundamentais da NR-10 em áreas ATEX.',
+  s6v:
+    'Vídeo. Boas Práticas e Regras de Ouro. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10. Assista ao vídeo sobre as boas práticas de gestão ATEX e regras de ouro para segurança na NR-10. Avance quando concluir.',
+  s6v2:
+    'Vídeo. Requisitos Legais. Requisitos Legais da NR-10 para ATEX. Assista ao vídeo sobre os requisitos legais mínimos da NR-10 para atmosferas explosivas. Avance quando concluir.',
+  s6f: null, // montado a partir da prova final Módulo 6
 };
 
 function cleanText(text) {
@@ -198,6 +213,16 @@ function parseQm4Questions(html) {
   }
 }
 
+function parseQm6Questions(html) {
+  const match = html.match(/const\s+qm6_data\s*=\s*(\[[\s\S]*?\n\s*\]);/);
+  if (!match) return [];
+  try {
+    return Function('"use strict"; return (' + match[1] + ');')();
+  } catch {
+    return [];
+  }
+}
+
 function buildMod3Narration(deck) {
   if (!deck.length) {
     return 'Desafio do Módulo 3. Permitido ou Proibido. Decida se cada prática pode ou não ser realizada na operação da PEMT. Conclua o jogo para validar o módulo.';
@@ -262,6 +287,8 @@ function buildManifest(htmlPath = HTML_PATH) {
       text = buildMod3Narration(mod3Deck);
     } else if (text === null && id === 's4f') {
       text = buildQuizNarration(parseQm4Questions(html), 4);
+    } else if (text === null && id === 's6f') {
+      text = buildQuizNarration(parseQm6Questions(html), 6);
     } else if (text === null && id === 's2e') {
       text = buildMod1Narration(mod1Deck);
     } else if (text === null && id === 's3f') {

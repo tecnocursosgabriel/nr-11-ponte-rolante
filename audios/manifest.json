@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-24T18:48:00.575Z",
+  "generatedAt": "2026-06-25T19:07:22.379Z",
   "source": "index.html",
   "audioDir": "audios",
   "slides": [
@@ -126,6 +126,86 @@
     },
     {
       "index": 15,
+      "id": "s-mod3",
+      "title": "MÓDULO 3",
+      "file": "audios/s-mod3.mp3",
+      "text": "Início do Módulo MÓDULO 3 Equipamentos de Proteção, Temperaturas e Rotulagem",
+      "audioReady": false
+    },
+    {
+      "index": 16,
+      "id": "s3v",
+      "title": "Riscos Elétricos e Fontes de Ignição",
+      "file": "audios/s3v.mp3",
+      "text": "Vídeo Riscos Elétricos e Fontes de Ignição Riscos Elétricos e Fontes de Ignição",
+      "audioReady": false
+    },
+    {
+      "index": 17,
+      "id": "s3v2",
+      "title": "Classe de Temperatura",
+      "file": "audios/s3v2.mp3",
+      "text": "Vídeo Classe de Temperatura Equipamentos de Proteção, Temperaturas e Rotulagem",
+      "audioReady": false
+    },
+    {
+      "index": 18,
+      "id": "s3t",
+      "title": "Classes de Temperatura",
+      "file": "audios/s3t.mp3",
+      "text": "Temperatura Classes de Temperatura Classificação de Temperatura Máxima de Superfície (NEC 500.8(C)) Temp. (°C) Temp. (°F) Classe (Código T) 450 °C 842 °F T1 300 °C 572 °F T2 280 °C 536 °F T2A 260 °C 500 °F T2B 230 °C 446 °F T2C 215 °C 419 °F T2D 200 °C 392 °F T3 Temp. (°C) Temp. (°F) Classe (Código T) 180 °C 356 °F T3A 165 °C 329 °F T3B 160 °C 320 °F T3C 135 °C 275 °F T4 120 °C 248 °F T4A 100 °C 212 °F T5 85 °C 185 °F T6",
+      "audioReady": false
+    },
+    {
+      "index": 19,
+      "id": "s3v3",
+      "title": "Modos de Proteção Ex",
+      "file": "audios/s3v3.mp3",
+      "text": "Vídeo Modos de Proteção Ex Tipos e Modos de Proteção Ex (Gases e Vapores)",
+      "audioReady": false
+    },
+    {
+      "index": 20,
+      "id": "s3v4",
+      "title": "Tipos de Proteção Ex",
+      "file": "audios/s3v4.mp3",
+      "text": "Sinalização Tipos de Proteção Ex Tipos de Proteção Ex para Gases e Vapores",
+      "audioReady": false
+    },
+    {
+      "index": 21,
+      "id": "s3v4_video",
+      "title": "Modos de Proteção Ex",
+      "file": "audios/s3v4_video.mp3",
+      "text": "Vídeo Modos de Proteção Ex Tipos e Modos de Proteção Ex (Poeiras e Fibras)",
+      "audioReady": false
+    },
+    {
+      "index": 22,
+      "id": "s3v5",
+      "title": "Modos de Proteção Ex",
+      "file": "audios/s3v5.mp3",
+      "text": "Sinalização Modos de Proteção Ex Modos de Proteção para Poeiras e Fibras Combustíveis",
+      "audioReady": false
+    },
+    {
+      "index": 23,
+      "id": "s3v6",
+      "title": "Rotulagem de Equipamentos Ex",
+      "file": "audios/s3v6.mp3",
+      "text": "Sinalização Rotulagem de Equipamentos Ex Rotulagem de Equipamentos Ex",
+      "audioReady": false
+    },
+    {
+      "index": 24,
+      "id": "s3g",
+      "title": "Classifique o Conceito",
+      "file": "audios/s3g.mp3",
+      "text": "DESAFIO Classifique o Conceito Desafio ATEX — Módulo 3 Classifique cada conceito ou equipamento de proteção no grupo adequado: Gases e Vapores, Poeiras e Fibras ou Riscos e Temperaturas. São 3 conceitos para testar seu aprendizado. Classifique a Proteção 1 / 3 ... Toque na categoria correta para avançar Desafio Concluído! Módulo 3 Validado",
+      "audioReady": false
+    },
+    {
+      "index": 25,
       "id": "s-mod4",
       "title": "MÓDULO 4",
       "file": "audios/s-mod4.mp3",
@@ -133,7 +213,7 @@
       "audioReady": false
     },
     {
-      "index": 16,
+      "index": 26,
       "id": "s4v",
       "title": "Riscos Químicos",
       "file": "audios/s4v.mp3",
@@ -141,7 +221,7 @@
       "audioReady": false
     },
     {
-      "index": 17,
+      "index": 27,
       "id": "s4s",
       "title": "Classes de Perigo do GHS",
       "file": "audios/s4s.mp3",
@@ -149,7 +229,47 @@
       "audioReady": false
     },
     {
-      "index": 18,
+      "index": 28,
+      "id": "s4s2",
+      "title": "Sinalização no Transporte",
+      "file": "audios/s4s2.mp3",
+      "text": "Vídeo Sinalização no Transporte Sinalização no Transporte e Painel de Segurança",
+      "audioReady": false
+    },
+    {
+      "index": 29,
+      "id": "s4s3",
+      "title": "Painel de Segurança",
+      "file": "audios/s4s3.mp3",
+      "text": "Sinalização Painel de Segurança Painel de Segurança e Ficha de Emergência",
+      "audioReady": false
+    },
+    {
+      "index": 30,
+      "id": "s4s4",
+      "title": "Diamante de Hommel",
+      "file": "audios/s4s4.mp3",
+      "text": "Vídeo Diamante de Hommel Entendendo o Diamante de Hommel",
+      "audioReady": false
+    },
+    {
+      "index": 31,
+      "id": "s4s5",
+      "title": "Riscos à Saúde e Reatividade",
+      "file": "audios/s4s5.mp3",
+      "text": "Sinalização Riscos à Saúde e Reatividade Riscos à Saúde Reatividade",
+      "audioReady": false
+    },
+    {
+      "index": 32,
+      "id": "s4s6",
+      "title": "Inflamabilidade e Risco Específico",
+      "file": "audios/s4s6.mp3",
+      "text": "Sinalização Inflamabilidade e Risco Específico Inflamabilidade Risco Específico",
+      "audioReady": false
+    },
+    {
+      "index": 33,
       "id": "s4a",
       "title": "Riscos Inerentes",
       "file": "audios/s4a.mp3",
@@ -157,11 +277,75 @@
       "audioReady": false
     },
     {
-      "index": 19,
+      "index": 34,
       "id": "s4f",
-      "title": "Identifique o Risco",
+      "title": "Quiz: Segurança Química",
       "file": "audios/s4f.mp3",
-      "text": "Quiz do Módulo 4. Responda às perguntas sobre os conceitos apresentados no módulo.",
+      "text": "Quiz do Módulo 4. Responda às 4 perguntas sobre os conceitos do módulo. Pergunta 1: Qual é a principal função dos pictogramas e da rotulagem GHS nos produtos químicos da planta? Alternativa 1: Informar apenas a data de validade. Alternativa 2: Identificar rapidamente os perigos padronizados para evitar exposições e reações acidentais. Alternativa 3: Substituir a necessidade de usar EPIs. Pergunta 2: No Painel de Segurança (placa laranja) dos caminhões (ANTT 420), o que o número na parte superior (ex: 63) indica? Alternativa 1: Os riscos da substância (ex: tóxico com risco de inflamabilidade). Alternativa 2: A identificação internacional ONU do produto. Alternativa 3: A capacidade total do tanque em litros. Pergunta 3: No Diamante de Hommel, o que o quadrado vermelho com numeração de 0 a 4 representa? Alternativa 1: O risco à vida e à saúde. Alternativa 2: O grau de reatividade e instabilidade química. Alternativa 3: A inflamabilidade e o ponto de fulgor do material. Pergunta 4: Qual documento é o \"manual de proteção oficial\" que deve ser consultado antes de manusear qualquer produto químico? Alternativa 1: FISPQ (Ficha de Informação de Segurança de Produto Químico). Alternativa 2: A nota fiscal de recebimento do material. Alternativa 3: O laudo de manutenção do equipamento.",
+      "audioReady": false
+    },
+    {
+      "index": 35,
+      "id": "s-mod5",
+      "title": "MÓDULO 5",
+      "file": "audios/s-mod5.mp3",
+      "text": "Módulo 5. Prevenção Contra Poeiras Combustíveis e Incêndios. Neste módulo você aprenderá sobre a prevenção e controle de poeiras combustíveis, mitigação de riscos de incêndio em áreas classificadas, e os principais procedimentos e equipamentos de segurança associados.",
+      "audioReady": false
+    },
+    {
+      "index": 36,
+      "id": "s5v",
+      "title": "Poeiras e Incêndios",
+      "file": "audios/s5v.mp3",
+      "text": "Vídeo. Poeiras e Incêndios. Prevenção Contra Poeiras Combustíveis e Incêndios. Assista ao vídeo sobre a prevenção contra poeiras combustíveis e incêndios em áreas classificadas. Avance quando concluir.",
+      "audioReady": false
+    },
+    {
+      "index": 37,
+      "id": "s5v2",
+      "title": "Pentágono de Explosão",
+      "file": "audios/s5v2.mp3",
+      "text": "Vídeo. Pentágono de Explosão. O Pentágono de Explosão de Poeira. Assista ao vídeo sobre os cinco elementos do pentágono de explosão de poeiras em ambientes industriais. Avance quando concluir.",
+      "audioReady": false
+    },
+    {
+      "index": 38,
+      "id": "s5f",
+      "title": "Poeiras e Incêndios",
+      "file": "audios/s5f.mp3",
+      "text": "Desafio do Módulo 5. Julgue as afirmações sobre poeiras e extintores. Quatro afirmações sobre o Pentágono de Explosão, energias mínimas de ignição e a escolha do agente extintor correto para a segurança em áreas classificadas. Responda Verdadeiro ou Falso para cada afirmação e conclua o desafio para validar o módulo.",
+      "audioReady": false
+    },
+    {
+      "index": 39,
+      "id": "s-mod6",
+      "title": "MÓDULO 6",
+      "file": "audios/s-mod6.mp3",
+      "text": "Módulo 6. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10. Neste módulo você aprenderá sobre a importância da gestão integrada, análise de riscos e as regras de segurança fundamentais da NR-10 em áreas ATEX.",
+      "audioReady": false
+    },
+    {
+      "index": 40,
+      "id": "s6v",
+      "title": "Boas Práticas e Regras",
+      "file": "audios/s6v.mp3",
+      "text": "Vídeo. Boas Práticas e Regras de Ouro. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10. Assista ao vídeo sobre as boas práticas de gestão ATEX e regras de ouro para segurança na NR-10. Avance quando concluir.",
+      "audioReady": false
+    },
+    {
+      "index": 41,
+      "id": "s6v2",
+      "title": "Requisitos Legais da NR-10",
+      "file": "audios/s6v2.mp3",
+      "text": "Vídeo. Requisitos Legais. Requisitos Legais da NR-10 para ATEX. Assista ao vídeo sobre os requisitos legais mínimos da NR-10 para atmosferas explosivas. Avance quando concluir.",
+      "audioReady": false
+    },
+    {
+      "index": 42,
+      "id": "s6f",
+      "title": "Avaliação Final",
+      "file": "audios/s6f.mp3",
+      "text": "Quiz do Módulo 6. Responda às 5 perguntas sobre os conceitos do módulo. Pergunta 1: Qual das seguintes alternativas descreve uma prática correta de gestão operacional e controle de bloqueio LOTO em áreas classificadas? Alternativa 1: A LOTO só é necessária se houver outros operadores na mesma área. Alternativa 2: As inspeções dividem-se em níveis visual, apurado e detalhado; a LOTO isola totalmente fontes de energia no serviço. Alternativa 3: Qualquer mudança física dispensa o procedimento MOC (Gerenciamento de Mudanças). Pergunta 2: De acordo com a NR-10 para atmosferas explosivas, quais registros são obrigatórios no prontuário formal de instalações elétricas? Alternativa 1: Apenas o recibo de compra das ferramentas anti-faiscantes. Alternativa 2: Análises de risco formais, classificação de áreas, diagramas unifilares atualizados e sistema de aterramento da planta. Alternativa 3: A lista de presença dos colaboradores no treinamento de integração. Pergunta 3: Qual é a sequência correta e completa das 5 Regras de Ouro para desenergização segura de um circuito elétrico? Alternativa 1: 1. Desligar; 2. Impedir reenergização (LOTO); 3. Constatar ausência de tensão; 4. Aterrar e curto-circuitar; 5. Sinalizar. Alternativa 2: 1. Desligar; 2. Avisar a equipe; 3. Medir a tensão; 4. Isolar os cabos; 5. Limpar a área. Alternativa 3: 1. Ligar o aterramento; 2. Desligar o disjuntor; 3. Testar a corrente; 4. Colocar cadeado; 5. Iniciar o trabalho. Pergunta 4: O que caracteriza o conceito de Gestão Multinível e em camadas para a segurança de plantas industriais em áreas ATEX? Alternativa 1: Focar unicamente no combate a incêndios secundários sem agir na prevenção de ignição. Alternativa 2: Estudo isolado de zoneamento ATEX, sem integração com outras técnicas de prevenção de riscos industriais. Alternativa 3: Abranger desde o design do processo, controle básico, prevenção de ignição até mitigação de emergências (como IEC 61511). Pergunta 5: Para intervenções com ferramentas e instalações de aterramento temporário em áreas classificadas, o técnico deve: Alternativa 1: Utilizar quaisquer ferramentas disponíveis, pois áreas classificadas só restringem circuitos elétricos. Alternativa 2: Inspecionar o aterramento/equalização anualmente (NBR 5410/5419), usar ferramentas anti-faiscantes e certificação Ex. Alternativa 3: Efetuar manutenções rápidas sem emitir Permissão de Trabalho formal para agilizar a operação.",
       "audioReady": false
     }
   ]

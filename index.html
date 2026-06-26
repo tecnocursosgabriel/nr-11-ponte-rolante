@@ -3954,7 +3954,8 @@
     }
 
     #s4f .content-area,
-    #s3g .content-area {
+    #s3g .content-area,
+    #s6f .content-area {
       flex: 1;
       min-height: 0;
       overflow: hidden;
@@ -4272,7 +4273,8 @@
       }
 
       #s4f .content-area,
-      #s3g .content-area {
+      #s3g .content-area,
+      #s6f .content-area {
         padding: 8px 14px 80px;
         overflow: hidden;
         justify-content: center;
@@ -7948,11 +7950,14 @@
       }
     }
 
-    /* Card intro — Desafio Módulo 1, 2, 3 e 4 (mobile + tablet) */
+    /* Card intro — Desafio Módulo 1, 2, 3, 4, 5 e 6 (mobile + tablet) */
     #s2e #mod1-game-intro,
     #s3f #mod2-quiz-intro,
     #s3g #mod3-game-intro,
-    #s4f #mod4-quiz-intro {
+    #s4f #mod4-quiz-intro,
+    #s5f #mod5-game-intro,
+    #s5f #mod5-game-play,
+    #s6f #mod6-quiz-intro {
       padding: 32px 24px 36px;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(114, 9, 183, 0.28);
@@ -7960,8 +7965,9 @@
       box-shadow: 0 28px 64px rgba(0, 0, 0, 0.4);
     }
 
-    /* ── Quiz / Desafio ATEX — Módulo 2 (s3f) ── */
-    #s3f .content-area {
+    /* ── Quiz / Desafio ATEX — Módulo 2 (s3f) e Módulo 5 (s5f) ── */
+    #s3f .content-area,
+    #s5f .content-area {
       padding-top: 12px !important;
       padding-bottom: 110px !important;
       justify-content: center;
@@ -7980,13 +7986,23 @@
       align-items: stretch !important;
     }
 
-    #s3f .top-bar {
+    #s5f .content-area.mod5-state-play {
+      padding-top: 16px !important;
+      padding-bottom: 120px !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+
+    #s3f .top-bar,
+    #s5f .top-bar {
       flex-shrink: 0;
     }
 
     #s3f .mod1-game-wrap,
     #s3g .mod1-game-wrap,
-    #s4f .mod1-game-wrap {
+    #s4f .mod1-game-wrap,
+    #s5f .mod1-game-wrap,
+    #s6f .mod1-game-wrap {
       flex-shrink: 0;
       width: 100%;
       max-width: 640px;
@@ -7994,12 +8010,15 @@
     }
 
     #s3f #mod2-quiz-play.quiz-wrap,
-    #s4f #mod4-quiz-play.quiz-wrap {
+    #s4f #mod4-quiz-play.quiz-wrap,
+    #s5f #mod5-game-play.quiz-wrap,
+    #s6f #mod6-quiz-play.quiz-wrap {
       max-width: 760px;
     }
 
     @media screen and (max-width: 768px) {
-      #s3f .content-area {
+      #s3f .content-area,
+      #s5f .content-area {
         padding-top: 8px !important;
         padding-bottom: 96px !important;
       }
@@ -8007,10 +8026,14 @@
       #s3f .content-area.mod2-state-play {
         padding-bottom: 110px !important;
       }
+      #s5f .content-area.mod5-state-play {
+        padding-bottom: 110px !important;
+      }
     }
 
     @media (min-width: 768px) {
-      #s3f .content-area {
+      #s3f .content-area,
+      #s5f .content-area {
         padding: 20px 48px 130px !important;
         align-items: center;
       }
@@ -8021,24 +8044,37 @@
         justify-content: flex-start !important;
         align-items: center !important;
       }
+      #s5f .content-area.mod5-state-play {
+        padding-top: 16px !important;
+        padding-bottom: 140px !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
 
       #s3f .mod1-game-wrap,
       #s3g .mod1-game-wrap,
-      #s4f .mod1-game-wrap {
+      #s4f .mod1-game-wrap,
+      #s5f .mod1-game-wrap,
+      #s6f .mod1-game-wrap {
         max-width: 980px;
         width: 100%;
       }
 
       #s3f #mod2-quiz-intro,
       #s3g #mod3-game-intro,
-      #s4f #mod4-quiz-intro {
+      #s4f #mod4-quiz-intro,
+      #s5f #mod5-game-intro,
+      #s5f #mod5-game-play,
+      #s6f #mod6-quiz-intro {
         padding: 52px 64px 56px;
         border-radius: 32px;
       }
 
       #s3f #mod2-quiz-intro .ic-circle,
       #s3g #mod3-game-intro .ic-circle,
-      #s4f #mod4-quiz-intro .ic-circle {
+      #s4f #mod4-quiz-intro .ic-circle,
+      #s5f #mod5-game-intro .ic-circle,
+      #s6f #mod6-quiz-intro .ic-circle {
         width: 132px !important;
         height: 132px !important;
         font-size: 64px !important;
@@ -8047,7 +8083,9 @@
 
       #s3f #mod2-quiz-intro h3,
       #s3g #mod3-game-intro h3,
-      #s4f #mod4-quiz-intro h3 {
+      #s4f #mod4-quiz-intro h3,
+      #s5f #mod5-game-intro h3,
+      #s6f #mod6-quiz-intro h3 {
         font-size: 40px !important;
         margin-bottom: 20px !important;
         line-height: 1.2;
@@ -8055,7 +8093,9 @@
 
       #s3f #mod2-quiz-intro p,
       #s3g #mod3-game-intro p,
-      #s4f #mod4-quiz-intro p {
+      #s4f #mod4-quiz-intro p,
+      #s5f #mod5-game-intro p,
+      #s6f #mod6-quiz-intro p {
         font-size: 20px !important;
         line-height: 1.7 !important;
         max-width: 760px;
@@ -8067,7 +8107,9 @@
 
       #s3f #mod2-quiz-intro .btn-start,
       #s3g #mod3-game-intro .btn-start,
-      #s4f #mod4-quiz-intro .btn-start {
+      #s4f #mod4-quiz-intro .btn-start,
+      #s5f #mod5-game-intro .btn-start,
+      #s6f #mod6-quiz-intro .btn-start {
         padding: 20px 56px !important;
         font-size: 18px !important;
         letter-spacing: 0.08em;
@@ -8415,6 +8457,47 @@
         padding: 8px 6px;
         font-size: 9px;
       }
+    }
+    /* ── Desafio ATEX Módulo 5 (s5f) ── */
+    .m5-pentagon-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: clamp(8px, 1.5vw, 16px);
+      margin-bottom: 24px;
+      width: 100%;
+    }
+    .m5-element-badge {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px dashed rgba(231, 76, 60, 0.4);
+      border-radius: 12px;
+      padding: clamp(8px, 1.2vw, 10px) clamp(12px, 1.8vw, 16px);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: clamp(11px, 1.6vw, 13px);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 4px 12px rgba(231, 76, 60, 0.03);
+    }
+    .m5-element-badge.active-danger {
+      border-color: rgba(231, 76, 60, 0.8);
+      background: rgba(231, 76, 60, 0.06);
+      color: #ff7675;
+      box-shadow: 0 0 14px rgba(231, 76, 60, 0.15);
+      animation: pulseDanger 2.5s infinite alternate;
+    }
+    .m5-element-badge.neutralized {
+      border-color: rgba(46, 204, 113, 0.8);
+      background: rgba(46, 204, 113, 0.1);
+      color: #2ecc71;
+      box-shadow: 0 0 14px rgba(46, 204, 113, 0.15);
+      text-decoration: line-through;
+    }
+    @keyframes pulseDanger {
+      0% { transform: scale(1); box-shadow: 0 0 8px rgba(231, 76, 60, 0.1); }
+      100% { transform: scale(1.03); box-shadow: 0 0 16px rgba(231, 76, 60, 0.22); }
     }
   </style>
 </head>
@@ -9888,6 +9971,235 @@
           </svg></div>
       </section>
 
+      <!-- ── MÓDULO 5 INTRO ── -->
+      <section class="slide mod-intro-slide" id="s-mod5">
+        <div class="content-area mod-intro-area">
+          <div class="mod-intro-inner">
+            <div class="mod-intro-badge">Início do Módulo</div>
+            <div class="mod-intro-title">MÓDULO 5</div>
+            <div class="mod-intro-sub">Prevenção Contra Poeiras Combustíveis e Incêndios</div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,65 C360,20 720,90 1080,40 C1260,15 1390,70 1440,60 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S5v: VÍDEO — Prevenção Contra Poeiras Combustíveis e Incêndios ── -->
+      <section class="slide video-slide" id="s5v">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Poeiras e <span>Incêndios</span></div>
+            <div class="slide-subtitle">Prevenção Contra Poeiras Combustíveis e Incêndios</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204311576?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Prevenção Contra Poeiras Combustíveis e Incêndios — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S5v2: VÍDEO — O Pentágono de Explosão de Poeira ── -->
+      <section class="slide video-slide" id="s5v2">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Pentágono de <span>Explosão</span></div>
+            <div class="slide-subtitle">O Pentágono de Explosão de Poeira</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204593945?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="O Pentágono de Explosão de Poeira — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S5f: DESAFIO — Módulo 5 (Poeiras e Extintores — Verdadeiro ou Falso) ── -->
+      <section class="slide" id="s5f">
+        <div class="top-bar">
+          <span class="section-tag">🎮 DESAFIO</span>
+          <div class="slide-title" style="margin-top:6px">Poeiras e <span>Incêndios</span></div>
+        </div>
+        <div class="content-area mod5-state-intro">
+          <div id="mod5-game-intro" class="mod1-game-wrap" style="text-align:center; animation: fadeIn 0.8s ease;">
+            <div class="ic-circle" style="margin: 0 auto 24px; width: 96px; height: 96px; font-size: 48px;">⚖️</div>
+            <h3 style="font-family:var(--font-h); font-size:26px; color:var(--white); margin-bottom:12px;">Desafio Módulo 5</h3>
+            <p style="color:rgba(255,255,255,0.72); font-size:15px; line-height:1.65; margin-bottom:28px;">
+              Julgue as afirmações sobre <strong>Pentágono de Explosão</strong>, <strong>Energias de Ignição</strong> e <strong>Agentes Extintores</strong> em Verdadeiro ou Falso.
+            </p>
+            <button class="btn-start" style="padding: 16px 40px; font-size: 15px; text-transform: uppercase;"
+              onclick="startMod5Game()">INICIAR DESAFIO</button>
+          </div>
+
+          <div id="mod5-game-play" class="mod1-game-wrap quiz-wrap" style="display:none;">
+            <div id="m5-game-panel">
+              <div class="q-meta" style="margin-bottom: 20px;">
+                <span class="q-lbl" style="font-weight: 700; color: var(--purple-lt);">Julgue a afirmação abaixo:</span>
+                <span id="m5-counter" class="q-lbl">Afirmação 1 de 4</span>
+              </div>
+
+              <p id="m5-text" class="q-text" style="font-size: clamp(15px, 2.5vw, 19px); line-height: 1.6; min-height: 80px; margin-bottom: 24px; color: var(--cream);">...</p>
+              
+              <div id="m5-options" class="q-options" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; width: 100%;">
+                <!-- Buttons will be dynamically inserted here -->
+              </div>
+              
+              <div id="m5-feedback" class="q-feedback" style="min-height: 32px; margin: 16px 0; font-size: 14px; line-height: 1.5;"></div>
+              
+              <button type="button" id="btn-next-m5" class="btn-next-q" onclick="nextQuestionMod5()" style="margin-top: 10px;">PRÓXIMA ETAPA</button>
+            </div>
+
+            <div id="m5-result-panel" style="display:none; text-align:center;">
+              <div id="m5-pct" class="result-pct green">100%</div>
+              <div class="r-stars" id="m5-stars">⭐⭐⭐</div>
+              <div id="m5-status" class="r-status ap">✅ Módulo Concluído!</div>
+              <p id="m5-sub" style="color:rgba(255,255,255,0.85); font-size:15px; line-height:1.55; margin:16px 0 24px;"></p>
+              <button type="button" class="btn-retry" onclick="resetGameMod5()">REFAZER DESAFIO</button>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,50 C480,10 960,85 1440,30 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── MÓDULO 6 INTRO ── -->
+      <section class="slide mod-intro-slide" id="s-mod6">
+        <div class="content-area mod-intro-area">
+          <div class="mod-intro-inner">
+            <div class="mod-intro-badge">Início do Módulo</div>
+            <div class="mod-intro-title">MÓDULO 6</div>
+            <div class="mod-intro-sub">Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10</div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,65 C360,20 720,90 1080,40 C1260,15 1390,70 1440,60 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S6v: VÍDEO — Boas Práticas e Regras de Ouro (Módulo 6) ── -->
+      <section class="slide video-slide" id="s6v">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Boas Práticas e <span>Regras</span></div>
+            <div class="slide-subtitle">Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204539216?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10 — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S6v2: VÍDEO — Requisitos Legais da NR-10 para ATEX (Módulo 6) ── -->
+      <section class="slide video-slide" id="s6v2">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Requisitos Legais da <span>NR-10</span></div>
+            <div class="slide-subtitle">Requisitos Legais da NR-10 para ATEX</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204619474?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Requisitos Legais da NR-10 para ATEX — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S6f: QUIZ — Módulo 6 (Prova Final) ── -->
+      <section class="slide" id="s6f">
+        <div class="top-bar">
+          <span class="section-tag">🏆 PROVA FINAL</span>
+          <div class="slide-title">Avaliação <span>Final</span></div>
+        </div>
+        <div class="content-area mod6-state-intro">
+          <div id="mod6-quiz-intro" class="mod1-game-wrap" style="text-align:center; animation: fadeIn 0.8s ease;">
+            <div class="ic-circle" style="margin: 0 auto 24px; width: 96px; height: 96px; font-size: 48px;">🏆</div>
+            <h3 style="font-family:var(--font-h); font-size:26px; color:var(--white); margin-bottom:12px;">Prova Final ATEX</h3>
+            <p style="color:rgba(255,255,255,0.72); font-size:15px; line-height:1.65; margin-bottom:28px;">
+              Responda <strong>5 perguntas</strong> sobre <strong>LOTO</strong>,
+              <strong>Requisitos da NR-10</strong>, <strong>Regras de Ouro</strong> e <strong>Gestão Multinível</strong> para concluir seu treinamento.
+            </p>
+            <button class="btn-start" style="padding: 16px 40px; font-size: 15px; text-transform: uppercase;"
+              onclick="startMod6Quiz()">INICIAR PROVA</button>
+          </div>
+
+          <div id="mod6-quiz-play" class="mod1-game-wrap quiz-wrap" style="display:none;">
+            <div id="qm6-question-panel">
+              <div class="q-meta">
+                <span id="qm6-counter" class="q-lbl">Pergunta 1 de 5</span>
+                <div class="q-dots" id="qm6-dots">
+                  <div id="qm6dot0" class="qdot2 cur"></div>
+                  <div id="qm6dot1" class="qdot2"></div>
+                  <div id="qm6dot2" class="qdot2"></div>
+                  <div id="qm6dot3" class="qdot2"></div>
+                  <div id="qm6dot4" class="qdot2"></div>
+                </div>
+              </div>
+              <p id="qm6-text" class="q-text">...</p>
+              <div id="qm6-options" class="q-options"></div>
+              <div id="qm6-feedback" class="q-feedback"></div>
+              <button type="button" id="btn-next-qm6" class="btn-next-q" onclick="nextQuestionMod6()">PRÓXIMA PERGUNTA</button>
+            </div>
+
+            <div id="qm6-result-panel" style="display:none; text-align:center;">
+              <div id="qm6-pct" class="result-pct green">100%</div>
+              <div class="r-stars" id="qm6-stars">⭐⭐⭐</div>
+              <div id="qm6-status" class="r-status ap">✅ Treinamento Concluído!</div>
+              <p id="qm6-sub" style="color:rgba(255,255,255,0.85); font-size:15px; line-height:1.55; margin:16px 0 24px;"></p>
+              <button type="button" class="btn-retry" onclick="resetQuizMod6()">REFAZER AVALIAÇÃO</button>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,50 C480,10 960,85 1440,30 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
     </div><!-- /slides -->
 
     <!-- NAV -->
@@ -11126,6 +11438,12 @@
       if (slide.id === 's4f') { // Desafio — Módulo 4
         return mod4_done;
       }
+      if (slide.id === 's5f') { // Desafio — Módulo 5
+        return mod5_done;
+      }
+      if (slide.id === 's6f') { // Prova Final — Módulo 6
+        return mod6_done;
+      }
       const reqs = slide.querySelectorAll('.req-item');
       for (let i = 0; i < reqs.length; i++) {
         if (!reqs[i].classList.contains('req-done')) return false;
@@ -11245,6 +11563,24 @@
           showMod4Panel('play');
         } else {
           showMod4Panel('intro');
+        }
+      }
+      if (newSlide.id === 's5f') {
+        if (mod5_done) {
+          showMod5Panel('result');
+        } else if (m5_game_started) {
+          showMod5Panel('play');
+        } else {
+          showMod5Panel('intro');
+        }
+      }
+      if (newSlide.id === 's6f') {
+        if (mod6_done) {
+          showMod6Panel('result');
+        } else if (qm6_index > 0 || document.getElementById('mod6-quiz-play')?.style.display === 'block') {
+          showMod6Panel('play');
+        } else {
+          showMod6Panel('intro');
         }
       }
       if (newSlide.id === 's2e') requestAnimationFrame(syncMod1GameVerticalLayout);
@@ -12630,6 +12966,371 @@
 
     function resetQuizMod4() {
       startMod4Quiz();
+    }
+
+    /* ══════════════════════════════════════════
+       JOGO MÓDULO 5 — Verdadeiro ou Falso
+       ══════════════════════════════════════════ */
+    let mod5_done = false;
+    let m5_game_started = false;
+    let m5_p_idx = 0; // 0 a 3
+    let m5_mistakes = 0;
+    let m5_answered = false;
+
+    const m5_game_data = [
+      {
+        q: 'O uso de extintores de água pressurizada é terminantemente proibido para combater incêndios em painéis elétricos (Classe C) e líquidos inflamáveis (Classe B) em áreas ATEX.',
+        ans: true, // Verdadeiro
+        tip: 'A água conduz eletricidade e espalha líquidos inflamáveis, além de poder causar explosões secundárias ao dispersar poeiras.'
+      },
+      {
+        q: 'A presença de poeiras metálicas combustíveis (como alumínio) exige uma energia de ignição extremamente alta (acima de 1000 milijoules) para iniciar uma explosão.',
+        ans: false, // Falso
+        tip: 'Materiais como o alumínio e o polietileno requerem energias mínimas de ignição extremamente baixas (apenas 50 e 10 milijoules).'
+      },
+      {
+        q: 'Para que ocorra uma explosão de poeiras, além do triângulo do fogo, são necessários dois fatores físicos adicionais: a dispersão das partículas no ar (formando nuvem) e o confinamento do ambiente.',
+        ans: true, // Verdadeiro
+        tip: 'O Pentágono de Explosão de Poeira é formado por: Combustível, Oxigênio, Ignição, Dispersão e Confinamento.'
+      },
+      {
+        q: 'O extintor de pó químico seco (PQS) é a melhor opção para painéis elétricos sensíveis porque não deixa qualquer resíduo químico nos componentes eletrônicos.',
+        ans: false, // Falso
+        tip: 'O PQS deixa resíduos que podem danificar componentes eletrônicos sensíveis. A melhor opção sem resíduos é o CO2.'
+      }
+    ];
+
+    function showMod5Panel(id) {
+      document.getElementById('mod5-game-intro').style.display = id === 'intro' ? 'block' : 'none';
+      document.getElementById('mod5-game-play').style.display = (id === 'play' || id === 'result') ? 'block' : 'none';
+      const pGame = document.getElementById('m5-game-panel');
+      const pResult = document.getElementById('m5-result-panel');
+      if (pGame) pGame.style.display = id === 'play' ? 'block' : 'none';
+      if (pResult) pResult.style.display = id === 'result' ? 'block' : 'none';
+      
+      const area = document.querySelector('#s5f .content-area');
+      if (area) {
+        area.className = 'content-area';
+        if (id === 'intro') area.classList.add('mod5-state-intro');
+        else if (id === 'play') area.classList.add('mod5-state-play');
+      }
+    }
+
+    function startMod5Game() {
+      mod5_done = false;
+      m5_game_started = true;
+      m5_p_idx = 0;
+      m5_mistakes = 0;
+      
+      showMod5Panel('play');
+      renderMod5Question();
+      updateNextButton();
+    }
+
+    function renderMod5Question() {
+      m5_answered = false;
+      const feedback = document.getElementById('m5-feedback');
+      if (feedback) { feedback.textContent = ''; feedback.className = 'q-feedback'; }
+      
+      const btnNext = document.getElementById('btn-next-m5');
+      if (btnNext) {
+        btnNext.className = 'btn-next-q';
+        btnNext.textContent = m5_p_idx < m5_game_data.length - 1 ? 'PRÓXIMA AFIRMAÇÃO' : 'VER RESULTADO';
+      }
+
+      const data = m5_game_data[m5_p_idx];
+      document.getElementById('m5-counter').textContent = `Afirmação ${m5_p_idx + 1} de ${m5_game_data.length}`;
+      document.getElementById('m5-text').textContent = data.q;
+      
+      const optsDiv = document.getElementById('m5-options');
+      optsDiv.innerHTML = '';
+      
+      // Render True / False options
+      const choices = [
+        { label: '👍 VERDADEIRO', value: true },
+        { label: '👎 FALSO', value: false }
+      ];
+
+      choices.forEach((choice, idx) => {
+        const optEl = document.createElement('div');
+        optEl.className = 'q-opt';
+        const letters = ['A', 'B'];
+        optEl.innerHTML = `<div class="opt-l">${letters[idx]}</div><span>${choice.label}</span>`;
+        optEl.onclick = () => checkMod5Answer(choice.value, optEl);
+        optsDiv.appendChild(optEl);
+      });
+    }
+
+    function checkMod5Answer(choiceValue, optEl) {
+      if (m5_answered) return;
+      m5_answered = true;
+      const data = m5_game_data[m5_p_idx];
+      const isCorrect = choiceValue === data.ans;
+      const fb = document.getElementById('m5-feedback');
+      const allOpts = document.querySelectorAll('#m5-options .q-opt');
+      allOpts.forEach(o => { o.style.pointerEvents = 'none'; o.classList.add('answered'); });
+
+      if (isCorrect) {
+        optEl.classList.add('correct');
+        if (fb) {
+          fb.textContent = `✓ Correto! ${data.tip}`;
+          fb.className = 'q-feedback ok';
+        }
+        playGameFeedback('ok');
+        const btn = document.getElementById('btn-next-m5');
+        if (btn) btn.className = 'btn-next-q show';
+      } else {
+        optEl.classList.add('wrong');
+        if (fb) {
+          fb.textContent = '✗ Incorreto. Pense bem e tente responder novamente!';
+          fb.className = 'q-feedback nok';
+        }
+        playGameFeedback('nok');
+        m5_mistakes++;
+        setTimeout(() => {
+          m5_answered = false;
+          if (fb) { fb.className = 'q-feedback'; fb.textContent = ''; }
+          allOpts.forEach(o => {
+            o.style.pointerEvents = 'auto';
+            o.classList.remove('wrong', 'answered');
+          });
+        }, 1500);
+      }
+    }
+
+    function nextQuestionMod5() {
+      m5_p_idx++;
+      if (m5_p_idx >= m5_game_data.length) {
+        finishMod5Game();
+      } else {
+        renderMod5Question();
+      }
+    }
+
+    function finishMod5Game() {
+      mod5_done = true;
+      m5_game_started = false;
+      showMod5Panel('result');
+      
+      const perf = Math.max(0, 100 - (m5_mistakes * 25));
+      
+      const pctEl = document.getElementById('m5-pct');
+      const starsEl = document.getElementById('m5-stars');
+      const statusEl = document.getElementById('m5-status');
+      const subEl = document.getElementById('m5-sub');
+      
+      pctEl.textContent = perf + '%';
+      if (perf === 100) {
+        pctEl.className = 'result-pct green';
+        starsEl.innerHTML = '⭐⭐⭐';
+        statusEl.textContent = '🏆 Excelente Desempenho!';
+        statusEl.className = 'r-status ap';
+        subEl.textContent = 'Excelente! Você julgou todas as afirmações sobre poeiras e extintores corretamente!';
+      } else if (perf >= 75) {
+        pctEl.className = 'result-pct yellow';
+        starsEl.innerHTML = '⭐⭐☆';
+        statusEl.textContent = '✅ Módulo Concluído!';
+        statusEl.className = 'r-status ap';
+        subEl.textContent = `Ótimo! Você concluiu com sucesso, cometendo apenas ${m5_mistakes} erro(s).`;
+      } else {
+        pctEl.className = 'result-pct red';
+        starsEl.innerHTML = '⭐☆☆';
+        statusEl.textContent = '❌ Módulo Incompleto';
+        statusEl.className = 'r-status rep';
+        subEl.textContent = `Você cometeu ${m5_mistakes} erros. É necessário obter pelo menos 75% para avançar. Tente novamente!`;
+        mod5_done = false;
+      }
+      updateNextButton();
+    }
+
+    function resetGameMod5() {
+      startMod5Game();
+    }
+
+    /* ══════════════════════════════════════════
+       QUIZ MÓDULO 6 — Prova Final do Treinamento
+       ══════════════════════════════════════════ */
+    let mod6_done = false;
+    let qm6_index = 0;
+    let qm6_mistakes = 0;
+    let qm6_answered = false;
+
+    const qm6_data = [
+      {
+        q: 'Qual das seguintes alternativas descreve uma prática correta de gestão operacional e controle de bloqueio LOTO em áreas classificadas?',
+        opts: [
+          'A LOTO só é necessária se houver outros operadores na mesma área.',
+          'As inspeções dividem-se em níveis visual, apurado e detalhado; a LOTO isola totalmente fontes de energia no serviço.',
+          'Qualquer mudança física dispensa o procedimento MOC (Gerenciamento de Mudanças).'
+        ],
+        ans: 1
+      },
+      {
+        q: 'De acordo com a NR-10 para atmosferas explosivas, quais registros são obrigatórios no prontuário formal de instalações elétricas?',
+        opts: [
+          'Apenas o recibo de compra das ferramentas anti-faiscantes.',
+          'Análises de risco formais, classificação de áreas, diagramas unifilares atualizados e sistema de aterramento da planta.',
+          'A lista de presença dos colaboradores no treinamento de integração.'
+        ],
+        ans: 1
+      },
+      {
+        q: 'Qual é a sequência correta e completa das 5 Regras de Ouro para desenergização segura de um circuito elétrico?',
+        opts: [
+          '1. Desligar; 2. Impedir reenergização (LOTO); 3. Constatar ausência de tensão; 4. Aterrar e curto-circuitar; 5. Sinalizar.',
+          '1. Desligar; 2. Avisar a equipe; 3. Medir a tensão; 4. Isolar os cabos; 5. Limpar a área.',
+          '1. Ligar o aterramento; 2. Desligar o disjuntor; 3. Testar a corrente; 4. Colocar cadeado; 5. Iniciar o trabalho.'
+        ],
+        ans: 0
+      },
+      {
+        q: 'O que caracteriza o conceito de Gestão Multinível e em camadas para a segurança de plantas industriais em áreas ATEX?',
+        opts: [
+          'Focar unicamente no combate a incêndios secundários sem agir na prevenção de ignição.',
+          'Estudo isolado de zoneamento ATEX, sem integração com outras técnicas de prevenção de riscos industriais.',
+          'Abranger desde o design do processo, controle básico, prevenção de ignição até mitigação de emergências (como IEC 61511).'
+        ],
+        ans: 2
+      },
+      {
+        q: 'Para intervenções com ferramentas e instalações de aterramento temporário em áreas classificadas, o técnico deve:',
+        opts: [
+          'Utilizar quaisquer ferramentas disponíveis, pois áreas classificadas só restringem circuitos elétricos.',
+          'Inspecionar o aterramento/equalização anualmente (NBR 5410/5419), usar ferramentas anti-faiscantes e certificação Ex.',
+          'Efetuar manutenções rápidas sem emitir Permissão de Trabalho formal para agilizar a operação.'
+        ],
+        ans: 1
+      }
+    ];
+
+    function showMod6Panel(id) {
+      document.getElementById('mod6-quiz-intro').style.display = id === 'intro' ? 'block' : 'none';
+      document.getElementById('mod6-quiz-play').style.display = (id === 'play' || id === 'result') ? 'block' : 'none';
+      const pQuestion = document.getElementById('qm6-question-panel');
+      const pResult = document.getElementById('qm6-result-panel');
+      if (pQuestion) pQuestion.style.display = id === 'play' ? 'block' : 'none';
+      if (pResult) pResult.style.display = id === 'result' ? 'block' : 'none';
+    }
+
+    function startMod6Quiz() {
+      qm6_index = 0;
+      qm6_mistakes = 0;
+      mod6_done = false;
+      showMod6Panel('play');
+      renderQm6Question();
+      updateNextButton();
+    }
+
+    function renderQm6Question() {
+      qm6_answered = false;
+      const data = qm6_data[qm6_index];
+      document.getElementById('qm6-counter').textContent = `Pergunta ${qm6_index + 1} de ${qm6_data.length}`;
+      document.getElementById('qm6-text').textContent = data.q;
+      const optsDiv = document.getElementById('qm6-options');
+      optsDiv.innerHTML = '';
+      const letters = ['A', 'B', 'C', 'D'];
+      data.opts.forEach((opt, idx) => {
+        const el = document.createElement('div');
+        el.className = 'q-opt';
+        el.innerHTML = `<div class="opt-l">${letters[idx]}</div><span>${opt}</span>`;
+        el.onclick = () => checkQm6Answer(idx, el);
+        optsDiv.appendChild(el);
+      });
+      const fb = document.getElementById('qm6-feedback');
+      if (fb) { fb.className = 'q-feedback'; fb.textContent = ''; }
+      const btn = document.getElementById('btn-next-qm6');
+      if (btn) {
+        btn.className = 'btn-next-q';
+        btn.textContent = qm6_index < qm6_data.length - 1 ? 'PRÓXIMA PERGUNTA' : 'VER RESULTADO';
+      }
+
+      for (let i = 0; i < qm6_data.length; i++) {
+        const dot = document.getElementById(`qm6dot${i}`);
+        if (dot) {
+          dot.className = 'qdot2';
+          if (i < qm6_index) dot.classList.add('done');
+          if (i === qm6_index) dot.classList.add('cur');
+        }
+      }
+    }
+
+    function checkQm6Answer(selectedIdx, el) {
+      if (qm6_answered) return;
+      qm6_answered = true;
+      const data = qm6_data[qm6_index];
+      const isCorrect = selectedIdx === data.ans;
+      const fb = document.getElementById('qm6-feedback');
+
+      const allOpts = document.querySelectorAll('#qm6-options .q-opt');
+      allOpts.forEach(o => { o.style.pointerEvents = 'none'; o.classList.add('answered'); });
+
+      if (isCorrect) {
+        el.classList.add('correct');
+        if (fb) { fb.textContent = '✓ Resposta correta!'; fb.className = 'q-feedback ok'; }
+        playGameFeedback('ok');
+        const btn = document.getElementById('btn-next-qm6');
+        if (btn) btn.className = 'btn-next-q show';
+      } else {
+        el.classList.add('wrong');
+        if (fb) { fb.textContent = '✗ Resposta incorreta. Tente novamente!'; fb.className = 'q-feedback nok'; }
+        playGameFeedback('nok');
+        qm6_mistakes++;
+        setTimeout(() => {
+          qm6_answered = false;
+          if (fb) { fb.className = 'q-feedback'; fb.textContent = ''; }
+          allOpts.forEach(o => {
+            o.style.pointerEvents = 'auto';
+            o.classList.remove('wrong', 'answered');
+          });
+        }, 1500);
+      }
+    }
+
+    function nextQuestionMod6() {
+      qm6_index++;
+      if (qm6_index >= qm6_data.length) {
+        finishMod6Quiz();
+      } else {
+        renderQm6Question();
+      }
+    }
+
+    function finishMod6Quiz() {
+      mod6_done = true;
+      showMod6Panel('result');
+      const perf = Math.max(0, 100 - (qm6_mistakes * 20));
+
+      const pctEl = document.getElementById('qm6-pct');
+      const starsEl = document.getElementById('qm6-stars');
+      const statusEl = document.getElementById('qm6-status');
+      const subEl = document.getElementById('qm6-sub');
+
+      pctEl.textContent = perf + '%';
+      if (perf === 100) {
+        pctEl.className = 'result-pct green';
+        starsEl.innerHTML = '⭐⭐⭐';
+        statusEl.textContent = '🏆 Prova Concluída!';
+        statusEl.className = 'r-status ap';
+        subEl.textContent = 'Excelente! Você demonstrou domínio total sobre Gestão ATEX, LOTO, NR-10 e as Regras de Ouro. Parabéns pela conclusão do treinamento!';
+      } else if (perf >= 80) {
+        pctEl.className = 'result-pct yellow';
+        starsEl.innerHTML = '⭐⭐☆';
+        statusEl.textContent = '✅ Prova Concluída!';
+        statusEl.className = 'r-status ap';
+        subEl.textContent = `Ótimo resultado! Você teve ${qm6_mistakes} erro(s). Certifique-se de atuar sempre de acordo com a segurança integrada.`;
+      } else {
+        pctEl.className = 'result-pct red';
+        starsEl.innerHTML = '⭐☆☆';
+        statusEl.textContent = '❌ Prova Incompleta';
+        statusEl.className = 'r-status rep';
+        subEl.textContent = `Você teve ${qm6_mistakes} erro(s). É necessário obter pelo menos 80% de acertos na avaliação final. Tente novamente!`;
+        mod6_done = false;
+      }
+      updateNextButton();
+    }
+
+    function resetQuizMod6() {
+      startMod6Quiz();
     }
 
     /* Shake animation for errors */
