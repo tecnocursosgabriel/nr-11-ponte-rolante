@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-25T19:07:22.379Z",
+  "generatedAt": "2026-06-26T19:26:34.019Z",
   "source": "index.html",
   "audioDir": "audios",
   "slides": [
@@ -113,7 +113,7 @@
       "id": "s3d",
       "title": "Zonas ATEX",
       "file": "audios/s3d.mp3",
-      "text": "Classificação. Zonas ATEX. Classificação de zonas ATEX. Grupo II — Gases, vapores e névoas. Zona 0: local onde uma Atmosfera Explosiva de Gás, Vapor ou Névoa está presente de forma contínua, por longos períodos. Frequência: Frequente. Zona 1: local onde uma Atmosfera Explosiva de Gás, Vapor ou Névoa pode ocorrer em condições normais de funcionamento. Frequência: Ocasional. Zona 2: local onde uma Atmosfera Explosiva de Gás, Vapor ou Névoa não é provável de ocorrer em condições normais de funcionamento. Frequência: Esporádico. Grupo III — Poeiras e fibras combustíveis. Zona 20: local onde uma Atmosfera Explosiva de Nuvem de Poeira ou Fibra Combustível está presente de forma contínua, por longos períodos. Frequência: Frequente. Zona 21: local onde a nuvem de poeira ou fibra combustível pode ocorrer em condições normais de funcionamento. Frequência: Ocasional. Zona 22: local onde a nuvem de poeira ou fibra combustível não é provável de ocorrer em condições normais de funcionamento. Frequência: Esporádico.",
+      "text": "Classificação. Zonas ATEX. Classificação de zonas ATEX. Grupo II — Gases, vapores e névoas. Zona 0: local onde uma Atmosfera Explosiva de Gás, Vapor ou Névoa está presente de forma contínua, por longos períodos. Frequência: Frequente. Zona 1: local onde uma Atmosfera Explosiva de Gás, Vapor ou Névoa pode ocorrer in condições normais de funcionamento. Frequência: Ocasional. Zona 2: local onde uma Atmosfera Explosiva de Gás, Vapor ou Névoa não é provável de ocorrer em condições normais de funcionamento. Frequência: Esporádico. Grupo III — Poeiras e fibras combustíveis. Zona 20: local onde uma Atmosfera Explosiva de Nuvem de Poeira ou Fibra Combustível está presente de forma contínua, por longos períodos. Frequência: Frequente. Zona 21: local onde a nuvem de poeira ou fibra combustível pode ocorrer em condições normais de funcionamento. Frequência: Ocasional. Zona 22: local onde a nuvem de poeira ou fibra combustível não é provável de ocorrer em condições normais de funcionamento. Frequência: Esporádico.",
       "audioReady": true
     },
     {
@@ -130,7 +130,7 @@
       "title": "MÓDULO 3",
       "file": "audios/s-mod3.mp3",
       "text": "Início do Módulo MÓDULO 3 Equipamentos de Proteção, Temperaturas e Rotulagem",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 16,
@@ -138,7 +138,7 @@
       "title": "Riscos Elétricos e Fontes de Ignição",
       "file": "audios/s3v.mp3",
       "text": "Vídeo Riscos Elétricos e Fontes de Ignição Riscos Elétricos e Fontes de Ignição",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 17,
@@ -146,15 +146,15 @@
       "title": "Classe de Temperatura",
       "file": "audios/s3v2.mp3",
       "text": "Vídeo Classe de Temperatura Equipamentos de Proteção, Temperaturas e Rotulagem",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 18,
       "id": "s3t",
       "title": "Classes de Temperatura",
       "file": "audios/s3t.mp3",
-      "text": "Temperatura Classes de Temperatura Classificação de Temperatura Máxima de Superfície (NEC 500.8(C)) Temp. (°C) Temp. (°F) Classe (Código T) 450 °C 842 °F T1 300 °C 572 °F T2 280 °C 536 °F T2A 260 °C 500 °F T2B 230 °C 446 °F T2C 215 °C 419 °F T2D 200 °C 392 °F T3 Temp. (°C) Temp. (°F) Classe (Código T) 180 °C 356 °F T3A 165 °C 329 °F T3B 160 °C 320 °F T3C 135 °C 275 °F T4 120 °C 248 °F T4A 100 °C 212 °F T5 85 °C 185 °F T6",
-      "audioReady": false
+      "text": "Tabela de Classes de Temperatura. Esta tabela apresenta a classificação da temperatura máxima de superfície de equipamentos elétricos conforme a norma NEC quinhentos ponto oito C. A temperatura máxima de superfície é a maior temperatura que o equipamento pode atingir na sua carcaça ou partes externas para evitar a ignição da atmosfera explosiva. As classes são divididas de T1 a T6. Por exemplo: a classe T1 permite uma temperatura máxima de quatrocentos e cinquenta graus Celsius. A classe T2 permite trezentos graus Celsius, dividindo-se também em subgrupos como T2A de duzentos e oitenta graus, T2B de duzentos e sessenta graus, T2C de duzentos e trinta graus, e T2D de duzentos e quinze graus. A classe T3 permite duzentos graus Celsius, contendo os subgrupos T3A de cento e oitenta graus, T3B de cento e sessenta e cinco graus, e T3C de cento e sessenta graus. A classe T4 permite cento e trinta e cinco graus Celsius, com a subclasse T4A de cento e vinte graus. A classe T5 permite cem graus Celsius. E por fim, a classe T6 é a mais segura e restritiva, limitando a temperatura a no máximo oitenta e cinco graus Celsius.",
+      "audioReady": true
     },
     {
       "index": 19,
@@ -162,7 +162,7 @@
       "title": "Modos de Proteção Ex",
       "file": "audios/s3v3.mp3",
       "text": "Vídeo Modos de Proteção Ex Tipos e Modos de Proteção Ex (Gases e Vapores)",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 20,
@@ -170,7 +170,7 @@
       "title": "Tipos de Proteção Ex",
       "file": "audios/s3v4.mp3",
       "text": "Sinalização Tipos de Proteção Ex Tipos de Proteção Ex para Gases e Vapores",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 21,
@@ -178,7 +178,7 @@
       "title": "Modos de Proteção Ex",
       "file": "audios/s3v4_video.mp3",
       "text": "Vídeo Modos de Proteção Ex Tipos e Modos de Proteção Ex (Poeiras e Fibras)",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 22,
@@ -186,7 +186,7 @@
       "title": "Modos de Proteção Ex",
       "file": "audios/s3v5.mp3",
       "text": "Sinalização Modos de Proteção Ex Modos de Proteção para Poeiras e Fibras Combustíveis",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 23,
@@ -194,7 +194,7 @@
       "title": "Rotulagem de Equipamentos Ex",
       "file": "audios/s3v6.mp3",
       "text": "Sinalização Rotulagem de Equipamentos Ex Rotulagem de Equipamentos Ex",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 24,
@@ -202,7 +202,7 @@
       "title": "Classifique o Conceito",
       "file": "audios/s3g.mp3",
       "text": "DESAFIO Classifique o Conceito Desafio ATEX — Módulo 3 Classifique cada conceito ou equipamento de proteção no grupo adequado: Gases e Vapores, Poeiras e Fibras ou Riscos e Temperaturas. São 3 conceitos para testar seu aprendizado. Classifique a Proteção 1 / 3 ... Toque na categoria correta para avançar Desafio Concluído! Módulo 3 Validado",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 25,
@@ -302,6 +302,14 @@
     },
     {
       "index": 37,
+      "id": "s5a",
+      "title": "Poeiras Combustíveis",
+      "file": "audios/s5a.mp3",
+      "text": "Fundamentos. Poeiras Combustíveis. O Conceito de Poeiras Combustíveis. Uma poeira combustível é qualquer sólido particulado combustível finamente dividido que apresenta um perigo de incêndio ou risco de explosão quando suspenso no ar ou em um processo específico de oxidação médio em um range de concentração. O risco operacional surge porque o próprio transporte e movimentação desses sólidos podem gerar o acúmulo de eletricidade estática nas superfícies. Sem os devidos sistemas de equalização e aterramento, uma mínima faísca pode iniciar uma combustão catastrófica. Atmosfera Explosiva.",
+      "audioReady": true
+    },
+    {
+      "index": 38,
       "id": "s5v2",
       "title": "Pentágono de Explosão",
       "file": "audios/s5v2.mp3",
@@ -309,7 +317,23 @@
       "audioReady": false
     },
     {
-      "index": 38,
+      "index": 39,
+      "id": "s5p",
+      "title": "Pentágono de Explosão",
+      "file": "audios/s5p.mp3",
+      "text": "Fundamentos. Pentágono de Explosão. Tabela do Pentágono de Explosão de Poeira. Aviso Importante: Remover qualquer um dos elementos previne a explosão, mas não necessariamente o fogo.",
+      "audioReady": true
+    },
+    {
+      "index": 40,
+      "id": "s5v3",
+      "title": "Reação das Substâncias",
+      "file": "audios/s5v3.mp3",
+      "text": "Vídeo. Reação das Substâncias. Particularidades de Reação das Substâncias. Assista ao vídeo sobre as características específicas de combustão e reação física de poeiras em áreas ATEX. Avance quando concluir.",
+      "audioReady": false
+    },
+    {
+      "index": 41,
       "id": "s5f",
       "title": "Poeiras e Incêndios",
       "file": "audios/s5f.mp3",
@@ -317,7 +341,7 @@
       "audioReady": false
     },
     {
-      "index": 39,
+      "index": 42,
       "id": "s-mod6",
       "title": "MÓDULO 6",
       "file": "audios/s-mod6.mp3",
@@ -325,7 +349,7 @@
       "audioReady": false
     },
     {
-      "index": 40,
+      "index": 43,
       "id": "s6v",
       "title": "Boas Práticas e Regras",
       "file": "audios/s6v.mp3",
@@ -333,7 +357,7 @@
       "audioReady": false
     },
     {
-      "index": 41,
+      "index": 44,
       "id": "s6v2",
       "title": "Requisitos Legais da NR-10",
       "file": "audios/s6v2.mp3",
@@ -341,7 +365,23 @@
       "audioReady": false
     },
     {
-      "index": 42,
+      "index": 45,
+      "id": "s6v3",
+      "title": "As 5 Regras de Ouro",
+      "file": "audios/s6v3.mp3",
+      "text": "Vídeo. Regras de Ouro. As 5 Regras de Ouro da NR-10. Assista ao vídeo sobre as 5 regras de ouro para segurança em instalações elétricas desenergizadas. Avance quando concluir.",
+      "audioReady": false
+    },
+    {
+      "index": 46,
+      "id": "s6v4",
+      "title": "Conclusão do Treinamento",
+      "file": "audios/s6v4.mp3",
+      "text": "Vídeo. Conclusão. Conclusão do Treinamento. Assista ao vídeo de encerramento com mensagem final e recomendações de segurança. Avance quando concluir.",
+      "audioReady": false
+    },
+    {
+      "index": 47,
       "id": "s6f",
       "title": "Avaliação Final",
       "file": "audios/s6f.mp3",
