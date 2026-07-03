@@ -9355,13 +9355,18 @@
     }
 
     .mod1-review-compact .pemt-intro-wrap {
-      gap: 12px;
-      max-width: 980px;
+      gap: 18px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
     .mod1-review-lead {
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+    }
+
+    .mod1-review-compact .mod1-info-lead {
+      font-size: clamp(17px, 1.6vw, 22px);
+      line-height: 1.65;
     }
 
     .mod1-review-compact .atex-sources-carousel {
@@ -9369,22 +9374,23 @@
     }
 
     .mod1-review-compact .atex-source-front .atex-source-icon {
-      font-size: 24px !important;
-      margin-bottom: 0 !important;
+      font-size: 40px !important;
+      margin-bottom: 6px !important;
     }
 
     .mod1-review-compact .atex-source-front h4 {
-      font-size: clamp(15px, 1.2vw, 18px) !important;
+      font-size: clamp(22px, 1.9vw, 26px) !important;
+      line-height: 1.2 !important;
     }
 
     .mod1-review-compact .atex-source-touch-hint {
-      font-size: 10px !important;
-      margin-top: 4px !important;
+      font-size: 14px !important;
+      margin-top: 8px !important;
     }
 
     .mod1-review-compact .atex-source-back-def {
-      font-size: clamp(12px, 0.95vw, 14px) !important;
-      line-height: 1.38 !important;
+      font-size: clamp(17px, 1.35vw, 20px) !important;
+      line-height: 1.45 !important;
     }
 
     #s2e.mod1-quiz-slide .content-area {
@@ -9478,16 +9484,17 @@
     @media (min-width: 769px) {
       .mod1-review-compact .atex-sources-container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 16px;
       }
 
       .mod1-review-compact .atex-source-card,
       .mod1-review-compact .atex-source-flip {
-        min-height: clamp(132px, 15vh, 168px);
+        min-height: clamp(240px, 28vh, 300px);
       }
 
       .mod1-review-compact .atex-source-face {
-        padding: 14px 12px;
+        padding: 22px 18px;
+        border-radius: 18px;
       }
     }
 
@@ -9638,29 +9645,37 @@
       }
 
       .mod1-review-compact .mod1-info-lead {
-        font-size: 13px !important;
+        font-size: 16px !important;
         text-align: left;
-        padding-bottom: 14px;
+        padding-bottom: 16px;
         margin-bottom: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.07);
       }
 
       .mod1-review-compact .atex-sources-carousel {
-        margin-top: 8px;
-        gap: 14px !important;
+        margin-top: 10px;
+        gap: 16px !important;
       }
 
       .mod1-review-compact .atex-source-card,
       .mod1-review-compact .atex-source-flip {
-        min-height: clamp(120px, 22vh, 150px);
+        min-height: clamp(175px, 30vh, 220px);
+      }
+
+      .mod1-review-compact .atex-source-front .atex-source-icon {
+        font-size: 36px !important;
       }
 
       .mod1-review-compact .atex-source-front h4 {
-        font-size: 15px !important;
+        font-size: 20px !important;
       }
 
       .mod1-review-compact .atex-source-touch-hint {
-        font-size: 9px !important;
+        font-size: 13px !important;
+      }
+
+      .mod1-review-compact .atex-source-back-def {
+        font-size: 16px !important;
       }
 
       #s2e.mod1-quiz-slide .content-area {
