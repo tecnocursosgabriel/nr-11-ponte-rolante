@@ -18,22 +18,30 @@ const MANIFEST_PATH = path.join(OUTPUT_DIR, 'manifest.json');
 /** Textos customizados para slides com pouco conteúdo textual ou conteúdo dinâmico. */
 const NARRATION_OVERRIDES = {
   s1:
-    'Módulo de Treinamento. Segurança do Trabalho. NR-10 — ATEX — Áreas Classificadas. Capacitação em segurança nas Áreas Classificadas conforme NR-10 e ATEX.',
+    'Módulo de Treinamento. Segurança do Trabalho. NR-11 — Ponte Rolante. Capacitação em segurança na operação de pontes rolantes conforme a NR-11.',
   s2:
-    'Apresentação. Bem-vindo ao Treinamento. NR-10 — ATEX — Áreas Classificadas. Assista ao vídeo de introdução e avance quando concluir.',
+    'Apresentação. Bem-vindo ao Treinamento. NR-11 — Ponte Rolante. Assista ao vídeo de introdução à NR-11 e habilitação legal e avance quando concluir.',
   s6:
-    'Sumário. Conteúdo Programático. Módulo 1: Fundamentos de Atmosferas Explosivas, ATEX. Módulo 2: Classificação e Mapeamento de Áreas. Módulo 3: Equipamentos de Proteção, Temperaturas e Rotulagem. Módulo 4: Riscos Inerentes e Identificação de Produtos Químicos. Módulo 5: Prevenção Contra Poeiras Combustíveis e Incêndios. Módulo 6: Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10.',
+    'Sumário. Conteúdo Programático. Módulo 1: Introdução à NR-11, Conceitos de Acidentes e Riscos Ambientais. Módulo 2: Medidas de Controle de Riscos e Equipamentos de Proteção, EPC e EPI. Módulo 3: Estrutura da Ponte Rolante, Componentes e Dispositivos de Proteção. Módulo 4: Acessórios de Elevação, Cabos de Aço e Técnicas de Engate. Módulo 5: Técnicas de Operação Segura, Controle de Balanço e Sinalização. Módulo 6: Inspeção, Manutenção de Máquinas e Bloqueio de Segurança, LOTO.',
   's-mod1':
-    'Início do Módulo 1. Fundamentos de Atmosferas Explosivas, ATEX.',
+    'Início do Módulo 1. Introdução à NR-11, Conceitos de Acidentes e Riscos Ambientais.',
   s2b:
-    'Fundamentos. O que é uma Área Classificada? Área Classificada e Atmosfera Explosiva. Uma área classificada é qualquer local no ambiente de trabalho que apresente ou possa apresentar uma mistura perigosa de substâncias inflamáveis com o ar. Essa mistura, chamada de Atmosfera Explosiva, pode se formar devido à presença de gases, vapores, névoas, poeiras ou fibras combustíveis. Sinal EX. Toque em cada card para revelar os tipos de fontes de atmosfera explosiva. Gases e Vapores: substâncias inflamáveis em estado gasoso ou vaporizado misturadas ao ar. Névoas: gotículas finas suspensas no ar capazes de formar atmosfera explosiva. Poeiras e Fibras: partículas sólidas combustíveis que, em concentração, podem explodir. Toque em todos os cards para avançar.',
+    'Fundamentos. O que é uma Ponte Rolante? Equipamento de elevação e transporte de carga que se movimenta com força motriz própria, assentado sobre trilhos fixados normalmente nas vigas laterais do edifício. Habilitação Legal — NR-11 item 11.1.5: o operador deverá receber treinamento específico dado pela empresa, que o habilitará nessa função. Segurança Integrada: a segurança sua e de seus colegas depende do conhecimento adquirido no treinamento. Força Motriz Própria: a ponte rolante possui motorização própria para deslocamento sobre trilhos e movimentação de cargas. Toque em todos os cards para avançar.',
   s2c:
-    'Vídeo. Tetraedro do Fogo. Fundamentos de Atmosferas Explosivas, ATEX. Assista ao vídeo sobre a concepção moderna do fogo: Combustível, Comburente, Energia de Ativação e Reação em Cadeia. Avance quando concluir.',
+    'Vídeo. Incidentes e Acidentes. Entendendo os Desvios. Fundamentos da NR-11 — Ponte Rolante. Assista ao vídeo sobre incidentes, acidentes e desvios de segurança. Avance quando concluir.',
   s2d:
-    'Vídeo. Atmosfera Explosiva. Fundamentos de Atmosferas Explosivas, ATEX. Assista ao vídeo sobre atmosferas potencialmente explosivas no dia a dia industrial — gases, vapores, poeiras e o reconhecimento de áreas classificadas. Avance quando concluir.',
-  s2e: null, // montado a partir do deck do jogo Módulo 1
+    'Vídeo. Comportamento vs. Ambiente. Atos e Condições Inseguras. Fundamentos da NR-11 — Ponte Rolante. Assista ao vídeo sobre atos e condições inseguras no ambiente de trabalho. Avance quando concluir.',
+  s2v4:
+    'Vídeo. Pirâmide de Frank Bird. Riscos Ambientais. Fundamentos da NR-11 — Ponte Rolante. Assista ao vídeo sobre a pirâmide de Frank Bird e os riscos ambientais. Avance quando concluir.',
+  's2c-info':
+    'Reforço. Incidente versus Acidente. A diferença está no resultado. Incidente é um acontecimento indesejado ou não programado que reduz a eficiência operacional, mas não causa lesão nem dano físico direto. Acidente é um evento indesejado com consequência direta: lesão, enfermidade, afastamento ou dano material. Todo acidente grave pode começar com um incidente ignorado.',
+  's2d-info':
+    'Reforço. Comportamento versus Ambiente. Ato inseguro é comportamento: a pessoa decide improvisar, ignorar ou deixar de cumprir uma etapa do procedimento. Condição insegura é ambiente: existe uma falha física, mecânica ou organizacional que aumenta a chance de acidente. Ação segura: corrija seu comportamento e comunique imediatamente a condição insegura.',
+  's2-review':
+    'Revisão Geral do Módulo 1. Ponte rolante com força motriz própria, treinamento NR-11 item 11.1.5, incidentes e acidentes, atos e condições inseguras, pirâmide de Frank Bird e riscos ambientais. Revise: Pirâmide de Bird, Risco Químico, Risco Físico, Risco Biológico, Risco Ergonômico e Risco de Acidentes. Toque em todos os cards para avançar ao quiz.',
+  s2e: null, // montado a partir do quiz Módulo 1
   's-mod2':
-    'Módulo 2. Classificação e Mapeamento de Áreas. Neste módulo você aprenderá a identificar onde o perigo está na fábrica, conhecer os grupos de classificação ATEX, as subdivisões por tipo de substância e o mapeamento em zonas para gases, vapores, névoas, poeiras e fibras combustíveis.',
+    'Módulo 2. Medidas de Controle de Riscos e Equipamentos de Proteção, EPC e EPI. Neste módulo você aprenderá sobre medidas de controle de riscos e o uso correto de equipamentos de proteção coletiva e individual.',
   s3a:
     'Classificação. Método de Classificação Elétrica de Área. Como sabemos exatamente onde o perigo está? Para isso, utilizamos o Método de Classificação Elétrica de Área. Ele é um processo racional que delimita os volumes de controle e nos ajuda a mitigar qualquer fonte de ignição elétrica. Nesse processo, as substâncias são divididas em grupos principais. Grupo I — Minas: destinado a minas subterrâneas com risco de grisu. Grupo II — Gases Inflamáveis: abrange a maioria das indústrias, focado em gases e vapores inflamáveis. Grupo III — Poeiras Combustíveis: engloba poeiras e fibras combustíveis. Revise cada grupo nos cards de classificação ATEX.',
   s3b:
@@ -53,8 +61,10 @@ const NARRATION_OVERRIDES = {
   s3t:
     'Tabela de Classes de Temperatura. Esta tabela apresenta a classificação da temperatura máxima de superfície de equipamentos elétricos conforme a norma NEC quinhentos ponto oito C. A temperatura máxima de superfície é a maior temperatura que o equipamento pode atingir na sua carcaça ou partes externas para evitar a ignição da atmosfera explosiva. A classe T1 permite uma temperatura máxima de quatrocentos e cinquenta graus Celsius. A classe T2 permite trezentos graus Celsius, dividindo-se também em subgrupos como T2A de duzentos e oitenta graus, T2B de duzentos e sessenta graus, T2C de duzentos e trinta graus, e T2D de duzentos e quinze graus. A classe T3 permite duzentos graus Celsius, contendo os subgrupos T3A de cento e oitenta graus, T3B de cento e sessenta e cinco graus, e T3C de cento e sessenta graus. A classe T4 permite cento e trinta e cinco graus Celsius, com a subclasse T4A de cento e vinte graus. A classe T5 permite cem graus Celsius. E por fim, a classe T6 é a mais segura e restritiva, limitando a temperatura a no máximo oitenta e cinco graus Celsius.',
   s3f: null, // montado a partir do quiz Módulo 2
+  's-mod3':
+    'Módulo 3. Estrutura da Ponte Rolante, Componentes e Dispositivos de Proteção. Neste módulo você aprenderá a identificar a estrutura da ponte rolante, seus componentes principais e os dispositivos de proteção essenciais para a operação segura.',
   's-mod4':
-    'Módulo 4. Riscos Inerentes e Identificação de Produtos Químicos. Neste módulo você aprenderá a reconhecer fontes de ignição, formação de atmosferas explosivas, riscos de equipamentos inadequados, e como identificar produtos químicos por meio da FDS, rotulagem GHS e compatibilidade química.',
+    'Módulo 4. Acessórios de Elevação, Cabos de Aço e Técnicas de Engate. Neste módulo você aprenderá sobre acessórios de elevação, cabos de aço e as técnicas corretas de engate para movimentação segura de cargas.',
   s4v:
     'Vídeo. Riscos Químicos. Riscos Inerentes e Identificação de Produtos Químicos. Assista ao vídeo sobre riscos químicos em áreas classificadas, identificação de produtos perigosos e cuidados no manuseio em ambiente ATEX. Avance quando concluir.',
   s4s:
@@ -70,7 +80,7 @@ const NARRATION_OVERRIDES = {
 
   s4f: null, // montado a partir do deck do jogo Módulo 4
   's-mod5':
-    'Módulo 5. Prevenção Contra Poeiras Combustíveis e Incêndios. Neste módulo você aprenderá sobre a prevenção e controle de poeiras combustíveis, mitigação de riscos de incêndio em áreas classificadas, e os principais procedimentos e equipamentos de segurança associados.',
+    'Módulo 5. Técnicas de Operação Segura, Controle de Balanço e Sinalização. Neste módulo você aprenderá as técnicas de operação segura, controle de balanço de cargas e procedimentos de sinalização na movimentação com ponte rolante.',
   s5v:
     'Vídeo. Poeiras e Incêndios. Prevenção Contra Poeiras Combustíveis e Incêndios. Assista ao vídeo sobre a prevenção contra poeiras combustíveis e incêndios em áreas classificadas. Avance quando concluir.',
   s5a:
@@ -86,22 +96,22 @@ const NARRATION_OVERRIDES = {
   s5f:
     'Desafio do Módulo 5. Julgue as afirmações sobre poeiras e extintores. Quatro afirmações sobre o Pentágono de Explosão, energias mínimas de ignição e a escolha do agente extintor correto para a segurança em áreas classificadas. Responda Verdadeiro ou Falso para cada afirmação e conclua o desafio para validar o módulo.',
   's-mod6':
-    'Módulo 6. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10. Neste módulo você aprenderá sobre a importância da gestão integrada, análise de riscos e as regras de segurança fundamentais da NR-10 em áreas ATEX.',
+    'Módulo 6. Inspeção, Manutenção de Máquinas e Bloqueio de Segurança, LOTO. Neste módulo você aprenderá sobre inspeção e manutenção de máquinas e o procedimento de bloqueio de segurança para trabalhos em equipamentos desenergizados.',
   s6v:
-    'Vídeo. Boas Práticas e Regras de Ouro. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10. Assista ao vídeo sobre as boas práticas de gestão ATEX e regras de ouro para segurança na NR-10. Avance quando concluir.',
+    'Vídeo. Boas Práticas e Regras de Ouro. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-11. Assista ao vídeo sobre as boas práticas de gestão ATEX e regras de ouro para segurança na NR-11. Avance quando concluir.',
   s6v2:
-    'Vídeo. Requisitos Legais. Requisitos Legais da NR-10 para ATEX. Assista ao vídeo sobre os requisitos legais mínimos da NR-10 para atmosferas explosivas. Avance quando concluir.',
+    'Vídeo. Requisitos Legais. Requisitos Legais da NR-11 para ATEX. Assista ao vídeo sobre os requisitos legais mínimos da NR-11 para atmosferas explosivas. Avance quando concluir.',
   s6_legal_reqs:
-    'Fundamentos. Requisitos Legais da NR-10. A NR-10 estabelece quesitos legais mínimos mandatórios para atmosferas explosivas. Os tópicos incluem: Análise de riscos formais elaborada e atualizada. Medidas de controle adotadas com base no estudo de classificação de área. Diagramas unifilares e aterramentos dos sistemas elétricos e protecionais. Equipamentos e materiais certificados para ATEX, mantidos em prontuário formal. Procedimentos formais estabelecidos para emissão de Permissão de Trabalho. Sinalização visual adequada para as áreas classificadas. Treinamento e capacitação específica para atuação na manutenção de áreas classificadas. E informação clara fornecida aos trabalhadores sobre os riscos envolvidos e as medidas de controle aplicadas. Revise todos esses quesitos legais obrigatórios.',
+    'Fundamentos. Requisitos Legais da NR-11. A NR-11 estabelece quesitos legais mínimos mandatórios para atmosferas explosivas. Os tópicos incluem: Análise de riscos formais elaborada e atualizada. Medidas de controle adotadas com base no estudo de classificação de área. Diagramas unifilares e aterramentos dos sistemas elétricos e protecionais. Equipamentos e materiais certificados para ATEX, mantidos em prontuário formal. Procedimentos formais estabelecidos para emissão de Permissão de Trabalho. Sinalização visual adequada para as áreas classificadas. Treinamento e capacitação específica para atuação na manutenção de áreas classificadas. E informação clara fornecida aos trabalhadores sobre os riscos envolvidos e as medidas de controle aplicadas. Revise todos esses quesitos legais obrigatórios.',
   s6v3:
-    'Vídeo. Regras de Ouro. As 5 Regras de Ouro da NR-10. Assista ao vídeo sobre as 5 regras de ouro para segurança em instalações elétricas desenergizadas. Avance quando concluir.',
+    'Vídeo. Regras de Ouro. As 5 Regras de Ouro da NR-11. Assista ao vídeo sobre as 5 regras de ouro para segurança em instalações elétricas desenergizadas. Avance quando concluir.',
   s6_rules:
-    'Fundamentos. As 5 Regras de Ouro. Conheça as cinco regras de ouro da NR-10 para garantir a segurança em instalações elétricas desenergizadas. Regra 1: Desligar as fontes de tensão, realizando o seccionamento do circuito. Regra 2: Impedir a reenergização por meio de bloqueios mecânicos e travamentos. Regra 3: Constatar a ausência de tensão com detectores adequados e calibrados. Regra 4: Aterrar o sistema elétrico e curto-circuitar as fases para proteção temporária. Regra 5: Sinalizar os bloqueios com etiquetas, placas e cartões de aviso.',
+    'Fundamentos. As 5 Regras de Ouro. Conheça as cinco regras de ouro da NR-11 para garantir a segurança em instalações elétricas desenergizadas. Regra 1: Desligar as fontes de tensão, realizando o seccionamento do circuito. Regra 2: Impedir a reenergização por meio de bloqueios mecânicos e travamentos. Regra 3: Constatar a ausência de tensão com detectores adequados e calibrados. Regra 4: Aterrar o sistema elétrico e curto-circuitar as fases para proteção temporária. Regra 5: Sinalizar os bloqueios com etiquetas, placas e cartões de aviso.',
   s6v4:
     'Vídeo. Conclusão. Conclusão do Treinamento. Assista ao vídeo de encerramento com mensagem final e recomendações de segurança. Avance quando concluir.',
   s6f: null, // montado a partir da prova final Módulo 6
   s_end:
-    'Treinamento Concluído! Parabéns, você finalizou com sucesso todas as etapas deste treinamento de NR-10 e Atmosferas Explosivas. Obrigado pela sua atenção e lembre-se sempre de priorizar a segurança integrada e os procedimentos corretos em todas as suas atividades industriais!',
+    'Treinamento Concluído! Parabéns, você finalizou com sucesso todas as etapas deste treinamento de NR-11 — Ponte Rolante. Obrigado pela sua atenção e lembre-se sempre de priorizar a segurança integrada e os procedimentos corretos em todas as suas atividades industriais!',
 };
 
 function cleanText(text) {
@@ -155,6 +165,17 @@ function parseQ5Questions(html) {
   }
 }
 
+function parseQm1Questions(html) {
+  const match = html.match(/const\s+qm1_questions\s*=\s*(\[[\s\S]*?\n\s*\]);/);
+  if (!match) return [];
+
+  try {
+    return Function(`"use strict"; return (${match[1]});`)();
+  } catch {
+    return [];
+  }
+}
+
 function parseMod1GameDeck(html) {
   const match = html.match(/const\s+mod1GameDeck\s*=\s*(\[[\s\S]*?\n\s*\]);/);
   if (!match) return [];
@@ -177,25 +198,24 @@ function parseQm2Questions(html) {
   }
 }
 
-function buildMod1Narration(deck) {
-  const zones = {
-    fuel: 'Combustível',
-    oxidizer: 'Comburente',
-    energy: 'Energia de Ativação',
-    chain: 'Reação em Cadeia',
-  };
-
-  if (!deck.length) {
-    return 'Desafio ATEX — Módulo 1. Tetraedro do Fogo. Classifique quatro situações nos elementos do tetraedro. Conclua o desafio para validar o módulo.';
+function buildMod1Narration(questions) {
+  if (!questions.length) {
+    return 'Quiz — Módulo 1. Fundamentos da NR-11. Responda cinco perguntas sobre ponte rolante, incidentes, acidentes, atos e condições inseguras e a pirâmide de Frank Bird. Acerte pelo menos três questões para concluir o módulo.';
   }
 
   const parts = [
-    'Desafio. Tetraedro do Fogo. Desafio ATEX — Módulo 1. Classifique quatro situações nos elementos do Tetraedro do Fogo: Combustível, Comburente, Energia de Ativação e Reação em Cadeia. Toque na opção correta para avançar. Conclua o desafio para validar o módulo.',
+    'Quiz. Fundamentos da NR-11. Módulo 1. Responda cinco perguntas sobre ponte rolante, habilitação legal, incidentes e acidentes, atos e condições inseguras e a pirâmide de Frank Bird. Acerte pelo menos três questões para concluir o módulo.',
   ];
 
-  deck.forEach((item, index) => {
-    parts.push(`Situação ${index + 1}: ${cleanText(item.text)}`);
-    parts.push(`Resposta correta: ${zones[item.zone] || item.zone}. ${cleanText(item.tip)}`);
+  questions.forEach((item, index) => {
+    parts.push(`Pergunta ${index + 1}: ${cleanText(item.q)}`);
+    item.opts.forEach((opt, optIndex) => {
+      const marker = optIndex === item.correct ? 'Resposta correta' : `Alternativa ${optIndex + 1}`;
+      parts.push(`${marker}: ${cleanText(opt)}`);
+    });
+    if (item.feedback_ok) {
+      parts.push(cleanText(item.feedback_ok));
+    }
   });
 
   return parts.join(' ');
@@ -304,7 +324,7 @@ function buildManifest(htmlPath = HTML_PATH) {
   const quizQuestions = parseQuizQuestions(html);
   const q5Questions = parseQ5Questions(html);
   const mod3Deck = parseMod3BinaryDeck(html);
-    const mod1Deck = parseMod1GameDeck(html);
+    const mod1Questions = parseQm1Questions(html);
   const qm2Questions = parseQm2Questions(html);
 
   const slides = [...doc.querySelectorAll('#slides .slide')].map((slide, index) => {
@@ -322,7 +342,7 @@ function buildManifest(htmlPath = HTML_PATH) {
     } else if (text === null && id === 's6f') {
       text = buildQuizNarration(parseQm6Questions(html), 6);
     } else if (text === null && id === 's2e') {
-      text = buildMod1Narration(mod1Deck);
+      text = buildMod1Narration(mod1Questions);
     } else if (text === null && id === 's3f') {
       text = buildMod2Narration(qm2Questions);
     } else if (text === undefined) {

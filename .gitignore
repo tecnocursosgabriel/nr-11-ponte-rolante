@@ -8,6 +8,9 @@ audios/.text-hashes.json
 .env
 .env.local
 
+# Arquivos temporários do simulador de atividade
+.cursor-activity/
+
 # Sistema
 .DS_Store
 Thumbs.db
