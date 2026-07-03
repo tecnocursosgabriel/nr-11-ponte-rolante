@@ -9196,6 +9196,20 @@
       padding-bottom: 6px;
     }
 
+    #s2c-info .mod1-info-lead,
+    #s2d-info .mod1-info-lead {
+      text-align: left;
+      max-width: none;
+      margin: 0;
+      padding: 14px 16px;
+      font-size: clamp(14px, 1.25vw, 16px);
+      line-height: 1.6;
+      font-weight: 500;
+      border-radius: 14px;
+      background: rgba(44, 255, 5, 0.06);
+      border: 1px solid rgba(44, 255, 5, 0.14);
+    }
+
     .mod1-compare-grid,
     .mod1-cause-grid {
       display: grid;
@@ -9296,6 +9310,20 @@
       line-height: 1;
       box-shadow: 0 8px 24px rgba(44, 255, 5, 0.25);
       margin: 0 6px;
+    }
+
+    .mod1-compare-carousel {
+      width: 100%;
+    }
+
+    .mod1-compare-nav {
+      display: none;
+    }
+
+    @media (min-width: 769px) {
+      .mod1-compare-nav {
+        display: none !important;
+      }
     }
 
     .mod1-cause-card {
@@ -9503,6 +9531,27 @@
         min-height: 0;
       }
 
+      #s2c-info .content-area,
+      #s2d-info .content-area {
+        flex: 1 1 0;
+        min-height: 0;
+        padding: 12px 18px 88px !important;
+        justify-content: center !important;
+        align-items: stretch !important;
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      #s2c-info.mod1-info-slide,
+      #s2d-info.mod1-info-slide {
+        height: 100%;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
       .mod1-info-slide .content-area {
         flex: 1 1 0;
         min-height: 0;
@@ -9512,6 +9561,217 @@
         overflow-y: auto !important;
         overflow-x: hidden !important;
         -webkit-overflow-scrolling: touch;
+      }
+
+      #s2c-info .mod1-info-wrap,
+      #s2d-info .mod1-info-wrap {
+        flex: 0 0 auto;
+        width: 100%;
+        min-height: 0;
+        gap: 12px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .mod1-compare-carousel {
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 2px;
+      }
+
+      #s2c-info .mod1-compare-container {
+        min-height: clamp(175px, 26vh, 220px);
+      }
+
+      #s2d-info .mod1-compare-container {
+        min-height: clamp(210px, 32vh, 260px);
+      }
+
+      .mod1-compare-container {
+        flex: 0 0 auto;
+        width: 100%;
+        position: relative;
+        display: block !important;
+        grid-template-columns: unset !important;
+        gap: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+      }
+
+      .mod1-compare-container .mod1-diff-badge {
+        display: none !important;
+      }
+
+      .mod1-compare-container .mod1-compare-card,
+      .mod1-compare-container .mod1-cause-card {
+        display: none;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 0 !important;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0 !important;
+      }
+
+      .mod1-compare-container .mod1-compare-card::before,
+      .mod1-compare-container .mod1-cause-card::before {
+        display: none !important;
+      }
+
+      .mod1-compare-container .mod1-compare-card.mod1-compare-active,
+      .mod1-compare-container .mod1-cause-card.mod1-compare-active {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 6px;
+        padding: 20px 18px !important;
+        border-radius: 16px !important;
+        background: linear-gradient(135deg, rgba(44, 255, 5, 0.12), rgba(255, 255, 255, 0.04)) !important;
+        border: 1px solid rgba(44, 255, 5, 0.28) !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
+        animation: fadeIn 0.35s ease;
+      }
+
+      .mod1-compare-container .mod1-compare-icon,
+      .mod1-compare-container .mod1-cause-icon {
+        grid-column: unset !important;
+        grid-row: unset !important;
+        width: auto !important;
+        height: auto !important;
+        background: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        font-size: 32px !important;
+        margin: 0 0 2px !important;
+        flex-shrink: 0;
+      }
+
+      .mod1-compare-container .mod1-compare-card h4,
+      .mod1-compare-container .mod1-cause-card h4 {
+        grid-column: unset !important;
+        grid-row: unset !important;
+        align-self: center !important;
+        width: 100%;
+        text-align: center;
+        font-family: var(--font-h);
+        font-size: clamp(19px, 4.6vw, 21px) !important;
+        line-height: 1.2 !important;
+        margin: 0 !important;
+        color: var(--white);
+      }
+
+      .mod1-compare-container .mod1-compare-card > p,
+      .mod1-compare-container .mod1-cause-card > p {
+        grid-column: unset !important;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        font-size: clamp(14px, 3.8vw, 16px) !important;
+        line-height: 1.42 !important;
+        margin: 0 !important;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .mod1-compare-container .mod1-compare-tag {
+        grid-column: unset !important;
+        width: auto !important;
+        max-width: 100%;
+        align-self: center;
+        justify-content: center;
+        margin-top: 8px !important;
+        padding: 6px 12px !important;
+        font-family: var(--font-h);
+        font-weight: 700;
+        font-size: clamp(10px, 2.6vw, 11px) !important;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--gold-lt);
+        background: rgba(44, 255, 5, 0.12) !important;
+        border-radius: 999px;
+        display: inline-flex !important;
+      }
+
+      .mod1-compare-container .mod1-cause-list {
+        grid-column: unset !important;
+        width: 100%;
+        gap: 6px;
+        margin-top: 4px;
+        padding-top: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: left;
+      }
+
+      .mod1-compare-container .mod1-cause-list span {
+        display: block;
+        font-size: clamp(11px, 3.2vw, 13px) !important;
+        line-height: 1.4 !important;
+        padding: 8px 10px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.22);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .mod1-compare-container .mod1-cause-card.mod1-compare-active > p {
+        text-align: center;
+        font-size: clamp(13px, 3.5vw, 15px) !important;
+      }
+
+      .mod1-compare-nav {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        width: 100%;
+        padding: 2px 0 4px;
+        flex-shrink: 0;
+      }
+
+      .mod1-compare-nav .atex-sources-counter {
+        font-size: 13px;
+        min-width: 52px;
+        text-align: center;
+      }
+
+      .mod1-compare-nav .atex-sources-btn {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        min-height: 48px;
+        box-shadow: 0 4px 16px rgba(44, 255, 5, 0.45);
+      }
+
+      #s2c-info .mod1-info-lead,
+      #s2d-info .mod1-info-lead {
+        flex-shrink: 0;
+        font-size: 12px !important;
+        line-height: 1.55 !important;
+        text-align: left;
+        padding: 10px 12px !important;
+        margin: 0;
+        border-radius: 14px;
+        background: rgba(44, 255, 5, 0.06);
+        border: 1px solid rgba(44, 255, 5, 0.14);
+      }
+
+      #s2c-info .mod1-reforce-note,
+      #s2d-info .mod1-reforce-note {
+        flex-shrink: 0;
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+        text-align: left;
+        margin: 0 !important;
+        padding: 10px 12px !important;
       }
 
       .mod1-info-slide .wave {
@@ -10439,22 +10699,37 @@
           <div class="mod1-info-wrap">
             <p class="mod1-info-lead">A diferença está no <strong>resultado</strong>: o incidente alerta que algo saiu do
               controle; o acidente já causou dano à pessoa, ao equipamento ou ao patrimônio.</p>
-            <div class="mod1-compare-grid">
-              <article class="mod1-compare-card">
-                <div class="mod1-compare-icon">📉</div>
-                <h4>Incidente</h4>
-                <p>Acontecimento indesejado que reduz a eficiência operacional, mas <strong>não causa lesão</strong> nem
-                  dano físico direto.</p>
-                <span class="mod1-compare-tag">Sinal de alerta</span>
-              </article>
-              <span class="mod1-diff-badge" aria-hidden="true">VS</span>
-              <article class="mod1-compare-card">
-                <div class="mod1-compare-icon">🚨</div>
-                <h4>Acidente</h4>
-                <p>Evento indesejado com consequência direta: <strong>lesão, enfermidade</strong> ou dano material ao
-                  patrimônio.</p>
-                <span class="mod1-compare-tag">Dano concretizado</span>
-              </article>
+            <div class="mod1-compare-carousel" id="mod1-compare-carousel-s2c">
+              <div class="mod1-compare-grid mod1-compare-container" id="mod1-compare-container-s2c">
+                <article class="mod1-compare-card mod1-compare-active">
+                  <div class="mod1-compare-icon">📉</div>
+                  <h4>Incidente</h4>
+                  <p>Acontecimento indesejado que reduz a eficiência operacional, mas <strong>não causa lesão</strong> nem
+                    dano físico direto.</p>
+                  <span class="mod1-compare-tag">Sinal de alerta</span>
+                </article>
+                <span class="mod1-diff-badge" aria-hidden="true">VS</span>
+                <article class="mod1-compare-card">
+                  <div class="mod1-compare-icon">🚨</div>
+                  <h4>Acidente</h4>
+                  <p>Evento indesejado com consequência direta: <strong>lesão, enfermidade</strong> ou dano material ao
+                    patrimônio.</p>
+                  <span class="mod1-compare-tag">Dano concretizado</span>
+                </article>
+              </div>
+              <div class="mod1-compare-nav atex-sources-nav">
+                <button type="button" class="atex-sources-btn" id="btn-mod1-compare-s2c-prev" aria-label="Comparação anterior">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                    <polygon points="15,3 3,10 15,17" />
+                  </svg>
+                </button>
+                <div class="atex-sources-counter" id="mod1-compare-s2c-counter">1 / 2</div>
+                <button type="button" class="atex-sources-btn" id="btn-mod1-compare-s2c-next" aria-label="Próxima comparação">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                    <polygon points="5,3 17,10 5,17" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <p class="mod1-reforce-note">Todo acidente grave pode começar com um incidente ignorado.</p>
           </div>
@@ -10474,27 +10749,42 @@
           <div class="mod1-info-wrap">
             <p class="mod1-info-lead">Aqui a diferença está na <strong>origem do risco</strong>: uma vem da decisão de
               quem opera; a outra vem da condição física do local, da máquina ou da organização da área.</p>
-            <div class="mod1-cause-grid">
-              <article class="mod1-cause-card">
-                <div class="mod1-cause-icon">🧠</div>
-                <h4>Ato Inseguro</h4>
-                <p><strong>É comportamento.</strong> A pessoa decide fazer, improvisar ou deixar de cumprir uma etapa do
-                  procedimento.</p>
-                <div class="mod1-cause-list">
-                  <span>Operar sem inspeção prévia do gancho.</span>
-                  <span>Movimentar carga com pessoas na área de risco.</span>
-                </div>
-              </article>
-              <span class="mod1-diff-badge" aria-hidden="true">VS</span>
-              <article class="mod1-cause-card">
-                <div class="mod1-cause-icon">🏭</div>
-                <h4>Condição Insegura</h4>
-                <p><strong>É ambiente.</strong> Falha física, mecânica ou organizacional que aumenta a chance de acidente.</p>
-                <div class="mod1-cause-list">
-                  <span>Cabo danificado, gancho sem trava ou botoeira irregular.</span>
-                  <span>Piso obstruído, baixa iluminação ou rota sem isolamento.</span>
-                </div>
-              </article>
+            <div class="mod1-compare-carousel" id="mod1-compare-carousel-s2d">
+              <div class="mod1-cause-grid mod1-compare-container" id="mod1-compare-container-s2d">
+                <article class="mod1-cause-card mod1-compare-active">
+                  <div class="mod1-cause-icon">🧠</div>
+                  <h4>Ato Inseguro</h4>
+                  <p><strong>É comportamento.</strong> A pessoa decide fazer, improvisar ou deixar de cumprir uma etapa do
+                    procedimento.</p>
+                  <div class="mod1-cause-list">
+                    <span>Operar sem inspeção prévia do gancho.</span>
+                    <span>Movimentar carga com pessoas na área de risco.</span>
+                  </div>
+                </article>
+                <span class="mod1-diff-badge" aria-hidden="true">VS</span>
+                <article class="mod1-cause-card">
+                  <div class="mod1-cause-icon">🏭</div>
+                  <h4>Condição Insegura</h4>
+                  <p><strong>É ambiente.</strong> Falha física, mecânica ou organizacional que aumenta a chance de acidente.</p>
+                  <div class="mod1-cause-list">
+                    <span>Cabo danificado, gancho sem trava ou botoeira irregular.</span>
+                    <span>Piso obstruído, baixa iluminação ou rota sem isolamento.</span>
+                  </div>
+                </article>
+              </div>
+              <div class="mod1-compare-nav atex-sources-nav">
+                <button type="button" class="atex-sources-btn" id="btn-mod1-compare-s2d-prev" aria-label="Comparação anterior">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                    <polygon points="15,3 3,10 15,17" />
+                  </svg>
+                </button>
+                <div class="atex-sources-counter" id="mod1-compare-s2d-counter">1 / 2</div>
+                <button type="button" class="atex-sources-btn" id="btn-mod1-compare-s2d-next" aria-label="Próxima comparação">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                    <polygon points="5,3 17,10 5,17" />
+                  </svg>
+                </button>
+              </div>
             </div>
             <p class="mod1-reforce-note">Ação segura: corrija seu comportamento e comunique imediatamente a condição insegura.</p>
           </div>
@@ -12990,6 +13280,119 @@
       return { update, reset, init };
     }
 
+    function createModCompareCarousel({ slideId, containerId, cardSelector, prevBtnId, nextBtnId, counterId }) {
+      let current = 0;
+      let touchHandled = false;
+      const slideSel = `#${slideId}`;
+
+      function isMobile() {
+        return window.matchMedia('(max-width: 768px)').matches;
+      }
+
+      function getCards() {
+        return document.querySelectorAll(`${slideSel} ${cardSelector}`);
+      }
+
+      function update() {
+        const cards = getCards();
+        if (!cards.length) return;
+
+        if (isMobile()) {
+          cards.forEach((c, i) => {
+            const active = i === current;
+            c.classList.toggle('mod1-compare-active', active);
+            c.setAttribute('aria-hidden', active ? 'false' : 'true');
+          });
+          const counter = document.getElementById(counterId);
+          if (counter) counter.textContent = (current + 1) + ' / ' + cards.length;
+          const prevBtn = document.getElementById(prevBtnId);
+          const nextBtn = document.getElementById(nextBtnId);
+          if (prevBtn) prevBtn.disabled = current === 0;
+          if (nextBtn) nextBtn.disabled = current === cards.length - 1;
+        } else {
+          cards.forEach((c) => {
+            c.classList.remove('mod1-compare-active');
+            c.removeAttribute('aria-hidden');
+          });
+        }
+      }
+
+      function next() {
+        if (!isMobile()) return;
+        const cards = getCards();
+        if (!cards.length || current >= cards.length - 1) return;
+        current++;
+        playClickSound();
+        update();
+      }
+
+      function prev() {
+        if (!isMobile()) return;
+        if (current <= 0) return;
+        current--;
+        playClickSound();
+        update();
+      }
+
+      function reset() {
+        current = 0;
+        update();
+      }
+
+      function init() {
+        const container = document.getElementById(containerId);
+        if (!container || container.dataset.compareInit === '1') return;
+        container.dataset.compareInit = '1';
+
+        const prevBtn = document.getElementById(prevBtnId);
+        const nextBtn = document.getElementById(nextBtnId);
+
+        if (prevBtn && nextBtn) {
+          const onPrev = (e) => { e.preventDefault(); e.stopPropagation(); prev(); };
+          const onNext = (e) => { e.preventDefault(); e.stopPropagation(); next(); };
+          prevBtn.addEventListener('touchend', (e) => {
+            if (prevBtn.disabled) return;
+            touchHandled = true;
+            setTimeout(() => { touchHandled = false; }, 400);
+            onPrev(e);
+          }, { passive: false });
+          nextBtn.addEventListener('touchend', (e) => {
+            if (nextBtn.disabled) return;
+            touchHandled = true;
+            setTimeout(() => { touchHandled = false; }, 400);
+            onNext(e);
+          }, { passive: false });
+          prevBtn.addEventListener('click', (e) => {
+            if (touchHandled) { e.preventDefault(); e.stopPropagation(); return; }
+            onPrev(e);
+          });
+          nextBtn.addEventListener('click', (e) => {
+            if (touchHandled) { e.preventDefault(); e.stopPropagation(); return; }
+            onNext(e);
+          });
+        }
+
+        let touchStartX = null;
+        container.addEventListener('touchstart', (e) => {
+          if (!isMobile() || e.touches.length !== 1) return;
+          touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        container.addEventListener('touchend', (e) => {
+          if (!isMobile() || touchStartX === null || !e.changedTouches.length) return;
+          const dx = e.changedTouches[0].clientX - touchStartX;
+          touchStartX = null;
+          if (Math.abs(dx) < 40) return;
+          e.preventDefault();
+          if (dx < 0) next();
+          else prev();
+        }, { passive: false });
+
+        update();
+      }
+
+      return { update, reset, init };
+    }
+
     const mod1RiscosCarousel = createModFlipCarousel({
       slideId: 's2-review',
       carouselId: 'mod1-riscos-carousel',
@@ -12997,6 +13400,24 @@
       prevBtnId: 'btn-mod1-riscos-prev',
       nextBtnId: 'btn-mod1-riscos-next',
       counterId: 'mod1-riscos-counter'
+    });
+
+    const mod1CompareS2cCarousel = createModCompareCarousel({
+      slideId: 's2c-info',
+      containerId: 'mod1-compare-container-s2c',
+      cardSelector: '.mod1-compare-card',
+      prevBtnId: 'btn-mod1-compare-s2c-prev',
+      nextBtnId: 'btn-mod1-compare-s2c-next',
+      counterId: 'mod1-compare-s2c-counter'
+    });
+
+    const mod1CompareS2dCarousel = createModCompareCarousel({
+      slideId: 's2d-info',
+      containerId: 'mod1-compare-container-s2d',
+      cardSelector: '.mod1-cause-card',
+      prevBtnId: 'btn-mod1-compare-s2d-prev',
+      nextBtnId: 'btn-mod1-compare-s2d-next',
+      counterId: 'mod1-compare-s2d-counter'
     });
 
     let currentReqSlide = 0;
@@ -13740,6 +14161,8 @@
         window.addEventListener('resize', () => {
           updateAtexSourcesCarousel();
           mod1RiscosCarousel.update();
+          mod1CompareS2cCarousel.update();
+          mod1CompareS2dCarousel.update();
         });
       }
 
@@ -13967,6 +14390,8 @@
       localStorage.setItem('nr17_current_slide', currentSlide);
 
       if (newSlide.id === 's2b') resetAtexSourcesCarousel();
+      if (newSlide.id === 's2c-info') mod1CompareS2cCarousel.reset();
+      if (newSlide.id === 's2d-info') mod1CompareS2dCarousel.reset();
       if (newSlide.id === 's2-review') mod1RiscosCarousel.reset();
       if (newSlide.id === 's3a') resetS3aGroupsCarousel();
       if (newSlide.id === 's3d') resetS3dZonesCarousel();
@@ -15863,6 +16288,8 @@
       loadAudioManifest();
       initAtexSourcesCarousel();
       mod1RiscosCarousel.init();
+      mod1CompareS2cCarousel.init();
+      mod1CompareS2dCarousel.init();
 
       initS3aGroupsCarousel();
       initS3dZonesCarousel();
