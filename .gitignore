@@ -1,3 +1,6 @@
+# Dependências locais (não vão para o site)
+node_modules/
+
 # Materiais grandes (manter só localmente)
 *.pptx
 *.pdf
